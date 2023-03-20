@@ -1,0 +1,91 @@
+/* Set up a 16px base font size and use a sans-serif font */
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  /* Set a dark color scheme with gray, black, and green accents */
+  body {
+    background-color: #333333;
+    color: #f0f0f0;
+  }
+  
+  a {
+    color: #00ff00;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  
+  /* Style the header and navigation bar */
+  header {
+    padding: 20px;
+    background-color: #444444;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  /* Style the main content area */
+  main {
+    margin-top: 80px;
+    padding: 40px;
+  }
+  
+  /* Style the section headings */
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the project, skills, and experience sections */
+  .project,
+  .skill,
+  .experience {
+    margin-bottom: 40px;
+  }
+  
+  .project h3,
+  .skill h3,
+  .experience h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project p,
+  .skill p,
+  .experience p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    padding: 20px;
+    background-color: #444444;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
