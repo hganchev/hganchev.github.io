@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Projects from "./Projects/Projects";
-import Skills from "./Skills/Skills";
+import Mission from "./Mission/Mission";
 import Experience from "./Experience/Experience";
 import AboutMe from "./AboutMe/AboutMe"
 
@@ -13,7 +13,7 @@ function App() {
           <ul>
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Social Skills</a></li>
+            <li><a href="#skills">Mission</a></li>
             <li><a href="#projects">Projects</a></li>
           </ul>
         </nav>
@@ -28,8 +28,8 @@ function App() {
           <Experience />
         </section>
         <section id="skills">
-          <h2>Social Skills</h2>
-          <Skills />
+          <h2>Mission</h2>
+          <Mission />
         </section>
         <section id="projects">
           <h2>Projects</h2>
