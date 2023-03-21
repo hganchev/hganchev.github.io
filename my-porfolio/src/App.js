@@ -11,9 +11,10 @@ function App() {
       <header>
         <nav>
           <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#aboutme">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Programming languages</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </nav>
       </header>
@@ -27,7 +28,7 @@ function App() {
           <Experience />
         </section>
         <section id="skills">
-          <h2>Skills</h2>
+          <h2>Programming languages</h2>
           <Skills />
         </section>
         <section id="projects">

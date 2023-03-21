@@ -4,7 +4,6 @@ import "./AboutMe.css";
 function AboutMe() {
   return (
     <div id = 'about-page'>
-      <h1>My AboutMe</h1>
       <section>
         <p>
            print("Hello World"),

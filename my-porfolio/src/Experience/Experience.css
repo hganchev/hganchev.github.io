@@ -1,3 +1,14 @@
 #exp-page p{
     font-family: monospace;
 }
+#exp-page h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(253, 203, 110);
+}
+
+#exp-page img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
