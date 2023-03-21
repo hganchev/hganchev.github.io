@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css';
 import ImageSlider from '../Tools/ImageSlider'
 import imageArd from './images/ArduinoPiano.png'
+import gitLogo from './images/github-icon-logo.png'
 
 function importAll(r) {
   let images = {};
@@ -17,13 +18,17 @@ function Projects() {
     { url: images[0], title: "rubik1" }
   ];
   const containerStyles = {
-    width: "500px",
-    height: "280px",
+    width: "800px",
+    height: "480px",
     margin: "0 auto",
   }
   return (
     <div id = 'project-page' style={containerStyles}>
       <ImageSlider slides={slides} />
+      <h2>Check my github for more</h2>
+      <a href= "https://github.com/hganchev">
+        <img className='img-logo' src= {gitLogo} />
+      </a>
     </div>
   );
 }
