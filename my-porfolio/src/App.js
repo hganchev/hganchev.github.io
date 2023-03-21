@@ -13,7 +13,7 @@ function App() {
           <ul>
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Mission</a></li>
+            <li><a href="#mission">Mission</a></li>
             <li><a href="#projects">Projects</a></li>
           </ul>
         </nav>
@@ -27,7 +27,7 @@ function App() {
           <h2>Experience</h2>
           <Experience />
         </section>
-        <section id="skills">
+        <section id="mission">
           <h2>Mission</h2>
           <Mission />
         </section>
