@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactJS_PortfolioWebSite/static/css/main.9e50f9f3.css",
-    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.e4b870ba.js",
+    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.4f46bdda.js",
     "static/js/787.3b722d45.chunk.js": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js",
     "static/media/arduino-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
     "static/media/c-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
@@ -10,11 +10,11 @@
     "static/media/linkedin-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/linkedin-icon-logo.e9274126be28f07d14ca.png",
     "index.html": "/ReactJS_PortfolioWebSite/index.html",
     "main.9e50f9f3.css.map": "/ReactJS_PortfolioWebSite/static/css/main.9e50f9f3.css.map",
-    "main.e4b870ba.js.map": "/ReactJS_PortfolioWebSite/static/js/main.e4b870ba.js.map",
+    "main.4f46bdda.js.map": "/ReactJS_PortfolioWebSite/static/js/main.4f46bdda.js.map",
     "787.3b722d45.chunk.js.map": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e50f9f3.css",
-    "static/js/main.e4b870ba.js"
+    "static/js/main.4f46bdda.js"
   ]
 }
