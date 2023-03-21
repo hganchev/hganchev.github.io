@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
-import Experience from "./Experiece/Experience";
+import Experience from "./Experience/Experience";
 
 function App() {
   return (
