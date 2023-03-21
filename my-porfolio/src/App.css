@@ -57,27 +57,6 @@ html {
     margin-bottom: 20px;
   }
   
-  /* Style the project, skills, and experience sections */
-  .project,
-  .skill,
-  .experience {
-    margin-bottom: 40px;
-  }
-  
-  .project h3,
-  .skill h3,
-  .experience h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .project p,
-  .skill p,
-  .experience p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-  }
-  
   /* Style the footer */
   footer {
     padding: 20px;

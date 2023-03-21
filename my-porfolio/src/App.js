@@ -3,6 +3,7 @@ import React from 'react';
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Experience from "./Experience/Experience";
+import AboutMe from "./AboutMe/AboutMe"
 
 function App() {
   return (
@@ -17,17 +18,21 @@ function App() {
         </nav>
       </header>
       <main>
-        <section id="projects">
-          <h2>Projects</h2>
-          <Projects />
+        <section id="aboutme">
+          <h2>AboutMe</h2>
+          <AboutMe />
+        </section>
+        <section id="experience">
+          <h2>Experience</h2>
+          <Experience />
         </section>
         <section id="skills">
           <h2>Skills</h2>
           <Skills />
         </section>
-        <section id="experience">
-          <h2>Experience</h2>
-          <Experience />
+        <section id="projects">
+          <h2>Projects</h2>
+          <Projects />
         </section>
       </main>
     </div>
