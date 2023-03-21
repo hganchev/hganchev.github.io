@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/ReactJS_PortfolioWebSite/static/css/main.1c1869db.css",
-    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.c88cd0e2.js",
+    "main.css": "/ReactJS_PortfolioWebSite/static/css/main.69213408.css",
+    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.f3c5d732.js",
     "static/js/787.3b722d45.chunk.js": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js",
+    "static/media/arduino-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
+    "static/media/c-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
+    "static/media/python-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/python-icon-logo.3773b61d7de3dd14e7ef.png",
     "index.html": "/ReactJS_PortfolioWebSite/index.html",
-    "main.1c1869db.css.map": "/ReactJS_PortfolioWebSite/static/css/main.1c1869db.css.map",
-    "main.c88cd0e2.js.map": "/ReactJS_PortfolioWebSite/static/js/main.c88cd0e2.js.map",
+    "main.69213408.css.map": "/ReactJS_PortfolioWebSite/static/css/main.69213408.css.map",
+    "main.f3c5d732.js.map": "/ReactJS_PortfolioWebSite/static/js/main.f3c5d732.js.map",
     "787.3b722d45.chunk.js.map": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c1869db.css",
-    "static/js/main.c88cd0e2.js"
+    "static/css/main.69213408.css",
+    "static/js/main.f3c5d732.js"
   ]
 }

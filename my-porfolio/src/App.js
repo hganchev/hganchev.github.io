@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import Projects from "./Projects";
-import Skills from "./Skills";
-import Experience from "./Experience";
+import Projects from "./Projects/Projects";
+import Skills from "./Skills/Skills";
+import Experience from "./Experiece/Experience";
 
 function App() {
   return (
