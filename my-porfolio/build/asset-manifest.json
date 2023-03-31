@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactJS_PortfolioWebSite/static/css/main.09085d92.css",
-    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.b0f2f22a.js",
+    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.9434513b.js",
     "static/js/787.3b722d45.chunk.js": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js",
     "pdf.worker.js": "/ReactJS_PortfolioWebSite/7cfd14e65d2fe36ec9d0b6104ebf666a.js",
     "static/media/BThesis_EN.pdf": "/ReactJS_PortfolioWebSite/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
@@ -17,11 +17,11 @@
     "static/media/discord-icon-logo.svg": "/ReactJS_PortfolioWebSite/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/ReactJS_PortfolioWebSite/index.html",
     "main.09085d92.css.map": "/ReactJS_PortfolioWebSite/static/css/main.09085d92.css.map",
-    "main.b0f2f22a.js.map": "/ReactJS_PortfolioWebSite/static/js/main.b0f2f22a.js.map",
+    "main.9434513b.js.map": "/ReactJS_PortfolioWebSite/static/js/main.9434513b.js.map",
     "787.3b722d45.chunk.js.map": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09085d92.css",
-    "static/js/main.b0f2f22a.js"
+    "static/js/main.9434513b.js"
   ]
 }
