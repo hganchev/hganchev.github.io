@@ -3,3 +3,11 @@
     height: 50px;
     padding: 5px;
   }
+
+  #mission-page p {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    overflow: auto;
+  }

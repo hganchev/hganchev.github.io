@@ -9,25 +9,71 @@
     overflow: auto;
   }
 
+/* Print */
 #about-page .print-span {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+    font-size: 16px;
     color: purple;
     background-color: #f5f5f5;
     overflow: auto;
 }
 
-#about-page .helloworld-span {
+#about-page .message-span {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
+  font-size: 16px;
   color: orange;
   overflow: auto;
 }
 
 #about-page .bracket-span {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
+  font-size: 16px;
   color: green;
   background-color: #f5f5f5;
   overflow: auto;
+}
+
+/* About Me Section */
+/* Studies */
+#about-page .about-me-studies,
+.about-me-work {
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+#about-page .about-me-studies h2,
+.about-me-work h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#about-page .about-me-studies p,
+.about-me-work p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Info */
+#about-page .about-me-info .container{
+  display: flex;
+  width: auto;
+  align-items: end;
+}
+
+#about-page .about-me-info .side-left{
+  flex: 1;
+  padding: 10px;
+}
+
+#about-page .about-me-info .container .side-left img{
+  width: 150px;
+  height: 220px;
+  border-radius: 30%;
+}
+
+#about-page .about-me-info .side-right{
+  display: flex;
+  align-items: center;
 }

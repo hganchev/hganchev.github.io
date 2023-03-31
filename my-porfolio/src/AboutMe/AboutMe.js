@@ -4,28 +4,41 @@ import PDFPages from '../Tools/PDFPages';
 
 import BachlorThesis from "./thesis/BThesis_EN.pdf"
 import MasterThesis from "./thesis/MThesis_EN.pdf"
+import HIGImage from "./images/HIG_IMG.jpg"
 
 function AboutMe() {
   return (
     <div id = 'about-page'>
-      <section>
-        <p>
+      {/* Print*/}
+      <p>
           <span className='print-span'>
             print
           </span>
           <span className='bracket-span'>(</span>
-          <span className='helloworld-span'>
-            "Hello World"
+          <span className='message-span'>
+            "Everything can be automated."
           </span>
           <span className='bracket-span'>)</span>
-        </p>
-        <p>
-          My name is Hristo and I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
-        </p>
+      </p>
+
+      {/* Info Section  */}
+      <section className='about-me-info'>
+        <div className='container'>
+          <div className='side-left'>
+            <img src={HIGImage}/>   
+          </div>
+          <div className='side-right'>
+            <p>
+              My name is Hristo and I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
+            </p>  
+          </div>
+        </div>
       </section>
-      <section>
+
+      {/* Studies Section  */}
+      <section className='about-me-studies'>
         <p>
-          I am a graduate of the Technical University of Sofia, branch Plovdiv, where I majored in Automation and Control Theory.
+          I am a graduate of the Technical University of Sofia, branch Plovdiv, where I majored in Automation, Information and Control Theory.
         </p>
         <p>
           During my studies, I completed a bachelor's degree project that focused on the Control of Mobile Robot with dynamic generated behaviors. 
@@ -40,9 +53,11 @@ function AboutMe() {
         </p>
         <PDFPages fileUrl={MasterThesis} />
       </section>
-      <section>
+
+      {/* Work Section  */}
+      <section className='about-me-work'>
         <p>
-          After completing my studies, I started my career in tech companies such as ABB, KOSTAL, and SENSATA, where I worked on diverse projects in automation, robotics, and programming.
+          After completing my studies, I started my career in engineering companies such as ABB, KOSTAL, and SENSATA, where I worked on diverse projects in automation, robotics, and programming.
           One of my significant undertakings involved creating a digital twin and working on industrial simulations. 
           The project included developing a virtual model of an industrial system to simulate its behavior and analyze its performance under different scenarios. 
           Through this project, I gained expertise in modeling, simulation, and optimization of industrial systems using tools such as CIROS Studio and TwinCAT PLC Control.
