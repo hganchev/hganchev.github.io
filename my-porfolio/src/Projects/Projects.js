@@ -1,22 +1,12 @@
 import React from 'react';
 import './Projects.css';
-import ImageSlider from '../Tools/ImageSlider'
-import imageArd from './images/ArduinoPiano.png'
+import PDFPages from '../Tools/PDFPages';
+
 import gitLogo from './images/github-icon-logo.png'
-
-function importAll(r) {
-  let images = {};
-  r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images
-}
-
-const images = importAll(require.context('./images/', false, /\.(png|jpe?g|svg)$/));
+import BachlorThesis from "./projects/BThesis_EN.pdf"
+import MasterThesis from "./projects/MThesis_EN.pdf"
 
 function Projects() {
-  const slides = [
-    { url: imageArd, title: "rubik" },
-    { url: images[0], title: "rubik1" }
-  ];
   const containerStyles = {
     width: "800px",
     height: "480px",
@@ -24,7 +14,14 @@ function Projects() {
   }
   return (
     <div id = 'project-page' style={containerStyles}>
-      <ImageSlider slides={slides} />
+      <div>
+        <h2>Bachelor Thesis</h2>
+        <PDFPages fileUrl={BachlorThesis} />
+      </div>
+      <div>
+        <h2>Magister Thesis</h2>
+        <PDFPages fileUrl={MasterThesis} />
+      </div>    
       <h2>Check my github for more</h2>
       <a href= "https://github.com/hganchev">
         <img className='img-logo' src= {gitLogo} />

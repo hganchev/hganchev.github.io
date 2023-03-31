@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const slideStyles = {
   width: "100%",
@@ -45,6 +45,14 @@ const dotStyle = {
   cursor: "pointer",
   fontSize: "20px",
 };
+
+// function importAll(r) {
+//   let images = {};
+//   r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
+//   return images
+// }
+
+// const images = importAll(require.context('./images/', false, /\.(png|jpe?g|svg)$/));
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
