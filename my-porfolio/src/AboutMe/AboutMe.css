@@ -8,3 +8,26 @@
     border-radius: 5px;
     overflow: auto;
   }
+
+#about-page .print-span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: purple;
+    background-color: #f5f5f5;
+    overflow: auto;
+}
+
+#about-page .helloworld-span {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: orange;
+  overflow: auto;
+}
+
+#about-page .bracket-span {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  color: green;
+  background-color: #f5f5f5;
+  overflow: auto;
+}

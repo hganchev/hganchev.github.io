@@ -1,15 +1,26 @@
 import React from 'react';
 import "./AboutMe.css";
+import PDFPages from '../Tools/PDFPages';
+
+import BachlorThesis from "./thesis/BThesis_EN.pdf"
+import MasterThesis from "./thesis/MThesis_EN.pdf"
 
 function AboutMe() {
   return (
     <div id = 'about-page'>
       <section>
         <p>
-           print("Hello World"),
+          <span className='print-span'>
+            print
+          </span>
+          <span className='bracket-span'>(</span>
+          <span className='helloworld-span'>
+            "Hello World"
+          </span>
+          <span className='bracket-span'>)</span>
         </p>
         <p>
-          my name is Hristo and I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
+          My name is Hristo and I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
         </p>
       </section>
       <section>
@@ -21,11 +32,15 @@ function AboutMe() {
           This project involved modeling the dynamics of the robot, as well as the system that generates the control with three behaviors: go-to-goal, avoid obstacle, and track wall/contours. 
           This project was an excellent opportunity for me to hone my skills in modeling and control theory.
         </p>
+        <PDFPages fileUrl={BachlorThesis} />
         <p>
           As part of my Master's degree, I completed a project that focused on controlling an industrial manipulator (robot) using Matlab. 
           The project involved developing communication protocols with the robot and programming it to search for objects using a camera. 
           This project provided me with a hands-on opportunity to gain practical experience in working with industrial robots and understanding their behavior.
         </p>
+        <PDFPages fileUrl={MasterThesis} />
+      </section>
+      <section>
         <p>
           After completing my studies, I started my career in tech companies such as ABB, KOSTAL, and SENSATA, where I worked on diverse projects in automation, robotics, and programming.
           One of my significant undertakings involved creating a digital twin and working on industrial simulations. 
