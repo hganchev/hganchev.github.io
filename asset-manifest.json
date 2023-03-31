@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/ReactJS_PortfolioWebSite/static/css/main.8643e036.css",
-    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.8557e236.js",
+    "main.css": "/ReactJS_PortfolioWebSite/static/css/main.712a2c36.css",
+    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.4dec872e.js",
     "static/js/787.3b722d45.chunk.js": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js",
+    "static/media/Thesis_EN.pdf": "/ReactJS_PortfolioWebSite/static/media/Thesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/matlab-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
     "static/media/arduino-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
     "static/media/c-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
@@ -14,12 +15,12 @@
     "static/media/fiverr-icon-logo.svg": "/ReactJS_PortfolioWebSite/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/ReactJS_PortfolioWebSite/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/ReactJS_PortfolioWebSite/index.html",
-    "main.8643e036.css.map": "/ReactJS_PortfolioWebSite/static/css/main.8643e036.css.map",
-    "main.8557e236.js.map": "/ReactJS_PortfolioWebSite/static/js/main.8557e236.js.map",
+    "main.712a2c36.css.map": "/ReactJS_PortfolioWebSite/static/css/main.712a2c36.css.map",
+    "main.4dec872e.js.map": "/ReactJS_PortfolioWebSite/static/js/main.4dec872e.js.map",
     "787.3b722d45.chunk.js.map": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8643e036.css",
-    "static/js/main.8557e236.js"
+    "static/css/main.712a2c36.css",
+    "static/js/main.4dec872e.js"
   ]
 }
