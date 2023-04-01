@@ -81,6 +81,8 @@ function PDFPages({fileUrl}){
 			<Document
 				file={fileUrl}
 				onLoadSuccess={onDocumentLoadSuccess}
+				onLoadError = {console.error}
+				onSourceError = {console.error}
 			>
 				<Page pageNumber={pageNumber} width={600}/>
 			</Document>
