@@ -1,42 +1,26 @@
 import './App.css';
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Projects from "./Projects/Projects";
 import Mission from "./Mission/Mission";
 import Experience from "./Experience/Experience";
 import AboutMe from "./AboutMe/AboutMe"
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section id="aboutme">
-          <h2>AboutMe</h2>
-          <AboutMe />
-        </section>
-        <section id="experience">
-          <h2>Experience</h2>
-          <Experience />
-        </section>
-        <section id="mission">
-          <h2>Mission</h2>
-          <Mission />
-        </section>
-        <section id="projects">
-          <h2>Projects</h2>
-          <Projects />
-        </section>
-      </main>
-    </div>
+    <BrowserRouter>
+      <Sidebar>
+        <Routes>
+          {/* <Route path="/" element={<Dashboard />} /> */}
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/mission" element={<Mission />} />
+        </Routes>
+      </Sidebar>
+    </BrowserRouter>
   );
 }
 

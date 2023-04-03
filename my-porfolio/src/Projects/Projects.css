@@ -3,3 +3,11 @@
     height: 50px;
     padding: 5px;
   }
+
+#project-page .page{
+  background-color: black;
+}
+
+#project-page .page h3, h2{
+  color: white;
+}
