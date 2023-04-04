@@ -5,22 +5,14 @@ import PDFPages from '../Tools/PDFPages';
 import BachlorThesis from "./thesis/BThesis_EN.pdf"
 import MasterThesis from "./thesis/MThesis_EN.pdf"
 import HIGImage from "./images/HIG_IMG.jpg"
+import linkedinLogo from './images/linkedin-icon-logo.png'
+import discordLogo from './images/discord-icon-logo.svg'
+import gmailLogo from './images/gmail-icon-logo.png'
+import fiverrLogo from './images/fiverr-icon-logo.svg'
 
 function AboutMe() {
   return (
-    <div id = 'about-page'>
-      {/* Print*/}
-      <p>
-          <span className='print-span'>
-            print
-          </span>
-          <span className='bracket-span'>(</span>
-          <span className='message-span'>
-            "Everything can be automated."
-          </span>
-          <span className='bracket-span'>)</span>
-      </p>
-
+    <div id = 'about-page'>   
       {/* Info Section  */}
       <section className='about-me-info'>
         <div className='container'>
@@ -34,6 +26,31 @@ function AboutMe() {
           </div>
         </div>
       </section>
+
+      {/* Print*/}
+      <p>
+          <span className='print-span'>
+            print
+          </span>
+          <span className='bracket-span'>(</span>
+          <span className='message-span'>
+            "Everything can be automated. Everything can be controlled. Everything can be programmed."
+          </span>
+          <span className='bracket-span'>)</span>
+      </p>
+      <h2>Check my socials for more : </h2>
+      <a href="https://discordapp.com/users/hganchev#7123">
+        <img className='img-logo' src={discordLogo}/>
+      </a>
+      <a href="mailto:hristo.iliev.ganchev@gmail.com">
+        <img className='img-logo' src={gmailLogo}/>
+      </a>
+      <a href= "https://www.linkedin.com/in/hristo-ganchev-5407806a/">
+        <img className='img-logo' src= {linkedinLogo} />
+      </a>
+      <a href="https://www.fiverr.com/users/hganchev">
+        <img className='img-logo' src={fiverrLogo} />
+      </a>
 
       {/* Studies Section  */}
       <section className='about-me-studies'>
@@ -71,7 +88,6 @@ function AboutMe() {
           I am always eager to learn and grow, and I am excited to see where my skills and experiences will take me in the future.
         </p>
       </section>
-
     </div>
   );
 }

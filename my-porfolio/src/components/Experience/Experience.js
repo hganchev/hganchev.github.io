@@ -1,10 +1,6 @@
 import React from 'react';
 import './Experience.css'
 
-import linkedinLogo from './images/linkedin-icon-logo.png'
-import discordLogo from './images/discord-icon-logo.svg'
-import gmailLogo from './images/gmail-icon-logo.png'
-import fiverrLogo from './images/fiverr-icon-logo.svg'
 import pylogo from './images/python-icon-logo.png'
 import clogo from './images/c-icon-logo.png'
 import arduinologo from './images/arduino-icon-logo.png'
@@ -48,19 +44,6 @@ function Experience() {
           <img className='img-logo' src = {arduinologo}/>
           <img className='img-logo' src = {matlogo}/>
         </p>  
-        <h2>Check my socials for more : </h2>
-        <a href="https://discordapp.com/users/hganchev#7123">
-          <img className='img-logo' src={discordLogo}/>
-        </a>
-        <a href="mailto:hristo.iliev.ganchev@gmail.com">
-          <img className='img-logo' src={gmailLogo}/>
-        </a>
-        <a href= "https://www.linkedin.com/in/hristo-ganchev-5407806a/">
-          <img className='img-logo' src= {linkedinLogo} />
-        </a>
-        <a href="https://www.fiverr.com/users/hganchev">
-          <img className='img-logo' src={fiverrLogo} />
-        </a>
       </div>
     </div>
   );
