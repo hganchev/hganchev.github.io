@@ -40,15 +40,9 @@ const sliderStyles = {
 	height: "100%",
 };
 
-const dotsContainerStyles = {
+const containerStyles = {
 	display: "flex",
 	justifyContent: "center",
-};
-
-const dotStyle = {
-	margin: "0 3px",
-	cursor: "pointer",
-	fontSize: "20px",
 };
 
 function PDFPages({fileUrl}){
@@ -69,28 +63,28 @@ function PDFPages({fileUrl}){
 
 	return (
 		<div className='PDFPages' style={sliderStyles}>
-		<div>
-			<div onClick={goToPrevPage} style={leftArrowStyles}>
-				❰
+			<div>
+				<div onClick={goToPrevPage} style={leftArrowStyles}>
+					❰
+				</div>
+				<div onClick={goToNextPage} style={rightArrowStyles}>
+					❱
+				</div>
 			</div>
-			<div onClick={goToNextPage} style={rightArrowStyles}>
-				❱
+			<div style={containerStyles}>
+				<Document
+					file={fileUrl}
+					onLoadSuccess={onDocumentLoadSuccess}
+					onLoadError = {console.error}
+					onSourceError = {console.error}
+				>
+					<Page pageNumber={pageNumber}/>
+				</Document>
 			</div>
-		</div>
-		<div style={dotsContainerStyles}>
-			<Document
-				file={fileUrl}
-				onLoadSuccess={onDocumentLoadSuccess}
-				onLoadError = {console.error}
-				onSourceError = {console.error}
-			>
-				<Page pageNumber={pageNumber} width={600}/>
-			</Document>
-		</div>
-		<p>
-			Page {pageNumber} of {numPages}
-		</p>
-	  </div>
+			<p>
+				Page {pageNumber} of {numPages}
+			</p>
+	  	</div>
 	);
 };
 

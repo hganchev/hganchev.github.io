@@ -62,7 +62,7 @@ function AboutMe() {
           This project involved modeling the dynamics of the robot, as well as the system that generates the control with three behaviors: go-to-goal, avoid obstacle, and track wall/contours. 
           This project was an excellent opportunity for me to hone my skills in modeling and control theory.
         </p>
-        <PDFPages fileUrl={BachlorThesis} />
+        <PDFPages fileUrl={BachlorThesis}/>
         <p>
           As part of my Master's degree, I completed a project that focused on controlling an industrial manipulator (robot) using Matlab. 
           The project involved developing communication protocols with the robot and programming it to search for objects using a camera. 
