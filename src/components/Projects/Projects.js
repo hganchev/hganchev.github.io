@@ -6,10 +6,7 @@ import gitLogo from './images/github-icon-logo.png'
 function Projects() {
   return (
     <div id = 'project-page'>
-      <h2> Check my github for more: </h2>
-      <a href= "https://github.com/hganchev">
-        <img className='img-logo' src= {gitLogo} />
-      </a>
+      <h1> Projects </h1>
       <div class="grid">
         <div class="item"> project 1 </div>
         <div class="item"> project 2 </div>
@@ -18,6 +15,10 @@ function Projects() {
         <div class="item"> project 5 </div>
         <div class="item"> project 6 </div>
       </div>
+      <h2> Check my github for more: </h2>
+      <a href= "https://github.com/hganchev">
+        <img className='img-logo' src= {gitLogo} />
+      </a>
     </div>
   );
 }
