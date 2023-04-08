@@ -2,12 +2,13 @@ import React, { useState, Component } from 'react';
 // import { Document, Page, pdfjs } from "react-pdf";
 import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-import "./PDFPages.css"
+import "./SlideControl.css"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function PDFPages({fileUrl = "", title = ""}){
+function SlideControl({fileUrl = "", title = ""}){
 	const [numPages, setNumPages] = useState(null);
 	const [pageNumber, setPageNumber] = useState(1);
+	const [renderedPageNumber, setRenderedPageNumber] = useState(null);
 
 	const onDocumentLoadSuccess = ({ numPages }) => {
 		setNumPages(numPages);
@@ -20,6 +21,8 @@ function PDFPages({fileUrl = "", title = ""}){
 		setPageNumber(
 			pageNumber + 1 >= numPages ? numPages : pageNumber + 1,
 		);
+
+	const isLoading = renderedPageNumber !== pageNumber;
 
 	return (
 		<div id="pdf-pages">
@@ -34,12 +37,23 @@ function PDFPages({fileUrl = "", title = ""}){
 			</div>
 			<div className="containerStyles">
 				<Document
+					transitionDuration={0}
 					file={fileUrl}
 					onLoadSuccess={onDocumentLoadSuccess}
 					onLoadError = {console.error}
 					onSourceError = {console.error}
 				>
-					<Page pageNumber={pageNumber}
+					{isLoading && renderedPageNumber ? (
+						<Page 
+							key={renderedPageNumber}
+							className={'prevPage'}
+							pageNumber={renderedPageNumber}
+							height={300}/>
+					): null}
+					<Page 
+						key={pageNumber}
+						pageNumber={pageNumber}
+						onRenderSuccess={() =>setRenderedPageNumber(pageNumber)}
 						height={300}/>
 				</Document>
 				<p className="pageNumStyles">
@@ -56,4 +70,4 @@ function PDFPages({fileUrl = "", title = ""}){
 	);
 };
 
-export default PDFPages;
+export default SlideControl;

@@ -32,3 +32,8 @@
 	justify-content: center;
 	text-decoration: underline;
 }
+
+#pdf-pages .prevPage {
+	position: absolute !important;
+	z-index: 1;
+}
