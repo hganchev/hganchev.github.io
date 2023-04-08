@@ -14,65 +14,79 @@ function AboutMe() {
   return (
     <div id = 'about-page'>   
       {/* Info Section  */}
-      <section className='about-me-info'>
+      <section>
         <div className='container'>
           <div className='side-left'>
             <img src={HIGImage}/>   
           </div>
           <div className='side-right'>
+            <h1>
+              My name is Hristo Ganchev
+            </h1> 
             <p>
-              My name is Hristo and I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
-            </p>  
+              and I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
+            </p>
+            {/* Print*/}
+            <p>
+              <span className='print-span'>
+                print
+              </span>
+              <span className='bracket-span'>(</span>
+              <span className='message-span'>
+                "Everything can be automated. Everything can be controlled. Everything can be programmed."
+              </span>
+              <span className='bracket-span'>)</span>
+            </p>
+            <h2>Contact me on the socials : </h2>
+            <a href="https://discordapp.com/users/hganchev#7123">
+              <img className='img-logo' src={discordLogo}/>
+            </a>
+            <a href="mailto:hristo.iliev.ganchev@gmail.com">
+              <img className='img-logo' src={gmailLogo}/>
+            </a>
+            <a href= "https://www.linkedin.com/in/hristo-ganchev-5407806a/">
+              <img className='img-logo' src= {linkedinLogo} />
+            </a>
+            <a href="https://www.fiverr.com/users/hganchev">
+              <img className='img-logo' src={fiverrLogo} />
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Print*/}
-      <p>
-          <span className='print-span'>
-            print
-          </span>
-          <span className='bracket-span'>(</span>
-          <span className='message-span'>
-            "Everything can be automated. Everything can be controlled. Everything can be programmed."
-          </span>
-          <span className='bracket-span'>)</span>
-      </p>
-      <h2>Check my socials for more : </h2>
-      <a href="https://discordapp.com/users/hganchev#7123">
-        <img className='img-logo' src={discordLogo}/>
-      </a>
-      <a href="mailto:hristo.iliev.ganchev@gmail.com">
-        <img className='img-logo' src={gmailLogo}/>
-      </a>
-      <a href= "https://www.linkedin.com/in/hristo-ganchev-5407806a/">
-        <img className='img-logo' src= {linkedinLogo} />
-      </a>
-      <a href="https://www.fiverr.com/users/hganchev">
-        <img className='img-logo' src={fiverrLogo} />
-      </a>
-
-      {/* Studies Section  */}
-      <section className='about-me-studies'>
+      {/* Education Section  */}
+      <section>
+        <h3>
+          Education
+        </h3>
         <p>
           I am a graduate of the Technical University of Sofia, branch Plovdiv, where I majored in Automation, Information and Control Theory.
         </p>
-        <p>
-          During my studies, I completed a bachelor's degree project that focused on the Control of Mobile Robot with dynamic generated behaviors. 
-          This project involved modeling the dynamics of the robot, as well as the system that generates the control with three behaviors: go-to-goal, avoid obstacle, and track wall/contours. 
-          This project was an excellent opportunity for me to hone my skills in modeling and control theory.
-        </p>
-        <PDFPages fileUrl={BachlorThesis}/>
-        <p>
-          As part of my Master's degree, I completed a project that focused on controlling an industrial manipulator (robot) using Matlab. 
-          The project involved developing communication protocols with the robot and programming it to search for objects using a camera. 
-          This project provided me with a hands-on opportunity to gain practical experience in working with industrial robots and understanding their behavior.
-        </p>
-        <PDFPages fileUrl={MasterThesis} />
+        <div className='about-me-grid'>
+          <div className='about-me-grid-item'>
+            <PDFPages fileUrl={BachlorThesis}
+                      title='Bachlor Thesis'/>
+            <p>
+              During my studies, I completed a bachelor's degree project that focused on the Control of Mobile Robot with dynamic generated behaviors. 
+              This project involved modeling the dynamics of the robot, as well as the system that generates the control with three behaviors: go-to-goal, avoid obstacle, and track wall/contours. 
+              This project was an excellent opportunity for me to hone my skills in modeling and control theory.
+            </p>
+          </div>
+          <div className='about-me-grid-item'> 
+            <PDFPages fileUrl={MasterThesis}
+                      title='Master Thesis' />
+            <p>
+              As part of my Master's degree, I completed a project that focused on controlling an industrial manipulator (robot) using Matlab. 
+              The project involved developing communication protocols with the robot and programming it to search for objects using a camera. 
+              This project provided me with a hands-on opportunity to gain practical experience in working with industrial robots and understanding their behavior.
+            </p>
+          </div>
+        </div>
       </section>
 
-      {/* Work Section  */}
-      <section className='about-me-work'>
+      {/* Career Section  */}
+      <section>
+        <h3>Career</h3>
         <p>
           After completing my studies, I started my career in engineering companies such as ABB, KOSTAL, and SENSATA, where I worked on diverse projects in automation, robotics, and programming.
           One of my significant undertakings involved creating a digital twin and working on industrial simulations. 

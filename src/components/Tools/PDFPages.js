@@ -5,47 +5,7 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 import "./PDFPages.css"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const slideStyles = {
-	width: "100%",
-	height: "100%",
-	borderRadius: "10px",
-	backgroundSize: "cover",
-	backgroundPosition: "center",
-};
-  
-const rightArrowStyles = {
-	position: "absolute",
-	top: "50%",
-	transform: "translate(0, -50%)",
-	right: "32px",
-	fontSize: "45px",
-	color: "#fff",
-	zIndex: 1,
-	cursor: "pointer",
-};
-
-const leftArrowStyles = {
-	position: "absolute",
-	top: "50%",
-	transform: "translate(0, -50%)",
-	left: "32px",
-	fontSize: "45px",
-	color: "#fff",
-	zIndex: 1,
-	cursor: "pointer",
-};
-
-const sliderStyles = {
-	position: "relative",
-	height: "100%",
-};
-
-const containerStyles = {
-	display: "flex",
-	justifyContent: "center",
-};
-
-function PDFPages({fileUrl}){
+function PDFPages({fileUrl = "", title = ""}){
 	const [numPages, setNumPages] = useState(null);
 	const [pageNumber, setPageNumber] = useState(1);
 
@@ -62,28 +22,36 @@ function PDFPages({fileUrl}){
 		);
 
 	return (
-		<div className='PDFPages' style={sliderStyles}>
-			<div>
-				<div onClick={goToPrevPage} style={leftArrowStyles}>
-					❰
-				</div>
-				<div onClick={goToNextPage} style={rightArrowStyles}>
-					❱
-				</div>
+		<div id="pdf-pages">
+			<div style={{
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+			}}>
+				<h1 className='titleStyle'>
+					{title}
+				</h1>
 			</div>
-			<div style={containerStyles}>
+			<div className="containerStyles">
 				<Document
 					file={fileUrl}
 					onLoadSuccess={onDocumentLoadSuccess}
 					onLoadError = {console.error}
 					onSourceError = {console.error}
 				>
-					<Page pageNumber={pageNumber}/>
+					<Page pageNumber={pageNumber}
+						height={300}/>
 				</Document>
+				<p className="pageNumStyles">
+					Page {pageNumber} of {numPages}
+				</p>
+				<div onClick={goToPrevPage} className="leftArrowStyles">
+					❰
+				</div>
+				<div onClick={goToNextPage} className="rightArrowStyles">
+					❱
+				</div>
 			</div>
-			<p>
-				Page {pageNumber} of {numPages}
-			</p>
 	  	</div>
 	);
 };

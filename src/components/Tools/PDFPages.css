@@ -1,0 +1,34 @@
+#pdf-pages .containerStyles{
+	display: flex;
+	justify-content: center;
+}
+#pdf-pages .rightArrowStyles{
+	position: absolute;
+	font-size: 45px;
+	color: gray;
+	z-index: 1;
+	cursor: pointer;
+	translate: 180px 100px;
+}
+#pdf-pages .leftArrowStyles{
+	position: absolute;
+	font-size: 45px;
+	color: gray;
+	z-index: 1;
+	cursor: pointer;
+	translate: -180px 100px;
+}
+#pdf-pages .pageNumStyles{
+	color: black;
+	position: absolute;
+	z-index: 1;
+	transition: all 0.1s ease;
+	translate: 0 270px;
+}
+#pdf-pages .titleStyle{
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: underline;
+}
