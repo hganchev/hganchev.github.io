@@ -1,0 +1,20 @@
+/* Print */
+.print .print-span {
+    font-size: 16px;
+    color: purple;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.print .print-message {
+    font-size: 16px;
+    color: orange;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.print .print-bracket {
+    font-size: 16px;
+    color: green;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+}

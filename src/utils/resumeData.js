@@ -13,17 +13,16 @@ import matlogo from './images/matlab-icon-logo.png'
 import WebIcon from '@mui/icons-material/Web';
 
 export default {
-    name: 'John Doe',
+    name: 'Hristo Ganchev',
     title: 'Software Engineer',
     about: `I am a software engineer!
             I enjoy creating software that improves the lives of those around me.
             \n\n I am a fast learner and I am always willing to learn new skills to better
             myself and the people around me.`,
-
-    birthday: '1 Jan 1995',
-    email: '',
-    phone: '123-456-7890',
-    address: '123, Main Street, New York, USA',
+    email: 'hristo.iliev.ganchev@gmail.com',
+    phone: '',
+    address: 'Sofia, Bulgaria',
+    picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
 
     socials: {
         discord: {
