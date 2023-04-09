@@ -1,12 +1,6 @@
 import React from 'react';
 import "./AboutMe.css";
 
-import HIGImage from "./images/HIG_IMG.jpg"
-import linkedinLogo from './images/linkedin-icon-logo.png'
-import discordLogo from './images/discord-icon-logo.svg'
-import gmailLogo from './images/gmail-icon-logo.png'
-import fiverrLogo from './images/fiverr-icon-logo.svg'
-
 function AboutMe() {
   return (
     <div id = 'about-page'>   
@@ -14,7 +8,7 @@ function AboutMe() {
       <section>
         <div className='container'>
           <div className='side-left'>
-            <img src={HIGImage}/>   
+            {/* <img src={}/>    */}
           </div>
           <div className='side-right'>
             <h1>
@@ -34,7 +28,7 @@ function AboutMe() {
               </span>
               <span className='bracket-span'>)</span>
             </p>
-            <h2>Contact me on the socials : </h2>
+            {/* <h2>Contact me on the socials : </h2>
             <a href="https://discordapp.com/users/hganchev#7123">
               <img className='img-logo' src={discordLogo}/>
             </a>
@@ -46,7 +40,7 @@ function AboutMe() {
             </a>
             <a href="https://www.fiverr.com/users/hganchev">
               <img className='img-logo' src={fiverrLogo} />
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
