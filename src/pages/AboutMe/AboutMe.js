@@ -18,7 +18,7 @@ function AboutMe() {
               and I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
             </p>
             {/* Print*/}
-            <p>
+            <p className='Code'>
               <span className='print-span'>
                 print
               </span>

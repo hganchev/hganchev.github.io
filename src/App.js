@@ -15,8 +15,9 @@ function App() {
   return (
     <Container>
       <Grid container>
-        <Grid item lg={3} md={4} sm={12} xs={12}>
-          {/* <AboutMe/> */}
+        <Grid item lg={3} md={4} sm={8} xs={12}>
+          <AboutMe/>
+          <Dashboard/>
         </Grid>
         <Grid item xs>
           <Router>

@@ -5,17 +5,17 @@
 }
 
 #project-page h2{
-  color: aliceblue;
+  color: rgb(0, 130, 243);
 }
 
 #project-page h1{
   font-size: 34px;
   padding: 5px;
-  color: #ffffff;
+  color: black;
   display: flex;
 	align-items: center;
 	justify-content: center;
-  text-decoration: underline overline orange;
+  text-decoration: underline overline var(--main-color);
 }
 
 #project-page .grid {
@@ -28,7 +28,7 @@
 }
 
 #project-page .item {
-  background-color: brown;
+  background-color: var(--main-color);
   min-height: 250px;
   min-width: 250px;
 }

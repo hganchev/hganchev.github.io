@@ -1,6 +1,9 @@
 import React from 'react';
 import './Projects.css';
 
+import BachlorThesis from "./thesis/BThesis_EN.pdf"
+import MasterThesis from "./thesis/MThesis_EN.pdf"
+
 function Projects() {
   return (
     <div id = 'project-page'>
@@ -20,6 +23,12 @@ function Projects() {
           <img className='img-logo' src = {arduinologo}/>
           <img className='img-logo' src = {matlogo}/>
         </p>  */}
+
+      {/* Thesis  */}
+      {/* <SlideControl fileUrl={BachlorThesis}
+                      title='Bachlor Thesis'/>
+      <SlideControl fileUrl={MasterThesis}
+                      title='Master Thesis' /> */}
     </div>
   );
 }
