@@ -1,0 +1,25 @@
+#exp-page p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+#exp-page h3{
+    font-size: 15px;
+    color: rgb(253, 203, 110);
+}
+#exp-page .img-logo {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+#exp-page section {
+    padding: 20px 0;
+}
+#exp-page section h3{
+    font-size: 34px;
+    padding: 5px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline overline orange;
+}

@@ -1,12 +1,14 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Projects from "./components/Projects/Projects";
-import Mission from "./components/Mission/Mission";
-import Experience from "./components/Experience/Experience";
-import AboutMe from "./components/AboutMe/AboutMe"
+
+import Projects from "./pages/Projects/Projects";
+import Mission from "./pages/Mission/Mission";
+import Experience from "./pages/Experience/Experience";
+import AboutMe from "./pages/AboutMe/AboutMe"
+import Dashboard from './pages/Dashboard/Dashboard';
+
 import Sidebar from "./components/Sidebar";
-import { Dashboard } from './components/Dashboard/Dashboard';
 
 function App() {
   return (
