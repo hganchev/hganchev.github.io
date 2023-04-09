@@ -6,8 +6,11 @@ import MasterThesis from "./thesis/MThesis_EN.pdf"
 
 function Projects() {
   return (
-    <div id = 'project-page'>
-      <h1> Projects </h1>
+    <div className='projects'>
+      <div className='section_title al_center'>
+        <span></span>
+        <h1 className='section_title_text s_40'> Projects </h1>
+      </div>
       <div class="grid">
         <div class="item"> project 1 </div>
         <div class="item"> project 2 </div>
