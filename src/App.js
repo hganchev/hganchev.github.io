@@ -23,8 +23,8 @@ function App() {
             <Header />
             <div className='main-content container_shadow'>
               <Routes>
-                <Route path="/" element={<AboutMe />}/>
-                <Route path="/portfolio" element={<Experience />}/>
+                <Route path="/" element={<Experience />}/>
+                <Route path="/portfolio" element={<Projects />}/>
               </Routes>  
             </div>
           </Router>

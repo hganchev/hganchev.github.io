@@ -3,15 +3,12 @@ import linkedinLogo from './images/linkedin-icon-logo.png'
 import discordLogo from './images/discord-icon-logo.svg'
 import gmailLogo from './images/gmail-icon-logo.png'
 import fiverrLogo from './images/fiverr-icon-logo.svg'
+import gitLogo from './images/github-icon-logo-black.png'
 
-import gitLogo from './images/github-icon-logo.png'
 import pylogo from './images/python-icon-logo.png'
 import clogo from './images/c-icon-logo.png'
 import arduinologo from './images/arduino-icon-logo.png'
 import matlogo from './images/matlab-icon-logo.png'
-
-import GitHubIcon from '@mui/icons-material/GitHub';
-
 
 export default {
     name: 'John Doe',
@@ -27,20 +24,20 @@ export default {
     address: '123, Main Street, New York, USA',
 
     socials: {
-        facebook: {
-            link: 'facebook.com',
-            text: 'Facebook',
-            icon: <GitHubIcon />
+        discord: {
+            link: 'https://discordapp.com/users/hganchev#7123',
+            text: 'Discord',
+            icon: <img src={discordLogo}/>
         },
         linkedin: {
-            link: 'linkedin.com',
+            link: 'https://www.linkedin.com/in/hristo-ganchev-5407806a/',
             text: 'LinkedIn',
-            icon: <GitHubIcon />
+            icon: <img src={linkedinLogo}/>
         },
         github: {
-            link: 'github.com',
+            link: 'https://www.github.com/hganchev',
             text: 'Github',
-            icon: <GitHubIcon />
+            icon: <img src={gitLogo}/>
         },
     },
     education: [
@@ -84,12 +81,12 @@ export default {
         {
             title: 'Web Development',
             description: 'I can build a beautiful and scalable SPA using <b>HTML</b>, <b>CSS</b> and <b>React.js</b>',
-            icon: <GitHubIcon />
+            icon: <img src={discordLogo}/>
         },
         {
             title: 'Web Development 2',
             description: 'I can build a beautiful and scalable SPA using <b>HTML</b>, <b>CSS</b> and <b>React.js</b>',
-            icon: <GitHubIcon />
+            icon: <img src={discordLogo}/>
         },
     ],
     skills: [
