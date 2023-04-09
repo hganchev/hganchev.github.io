@@ -120,7 +120,9 @@ function Experience() {
             {resumeData.services.map((service) => (
               <Grid item xs={12} sm={6} md={3}>
                 <div className= 'service'>
-                  <Icon className='service_icon'>{service.icon}</Icon>
+                  <div className='service_icon'>
+                    {service.icon}
+                  </div>
                   <Typography className='service_title' variant='h6'>
                     {service.title}
                   </Typography>

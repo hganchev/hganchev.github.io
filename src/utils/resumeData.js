@@ -10,6 +10,8 @@ import clogo from './images/c-icon-logo.png'
 import arduinologo from './images/arduino-icon-logo.png'
 import matlogo from './images/matlab-icon-logo.png'
 
+import WebIcon from '@mui/icons-material/Web';
+
 export default {
     name: 'John Doe',
     title: 'Software Engineer',
@@ -80,13 +82,17 @@ export default {
     services: [
         {
             title: 'Web Development',
-            description: 'I can build a beautiful and scalable SPA using <b>HTML</b>, <b>CSS</b> and <b>React.js</b>',
-            icon: <img src={discordLogo}/>
+            description: `I can build a beautiful and 
+            scalable SPA using <b>HTML</b>, 
+            <b>CSS</b> and <b>React.js</b>`,
+            icon: <WebIcon/>
         },
         {
             title: 'Web Development 2',
-            description: 'I can build a beautiful and scalable SPA using <b>HTML</b>, <b>CSS</b> and <b>React.js</b>',
-            icon: <img src={discordLogo}/>
+            description: `I can build a beautiful and 
+            scalable SPA using <b>HTML</b>, 
+            <b>CSS</b> and <b>React.js</b>`,
+            icon: <WebIcon/>
         },
     ],
     skills: [
