@@ -2,6 +2,10 @@ import React from 'react';
 import './Projects.css';
 
 import gitLogo from './images/github-icon-logo.png'
+import pylogo from './images/python-icon-logo.png'
+import clogo from './images/c-icon-logo.png'
+import arduinologo from './images/arduino-icon-logo.png'
+import matlogo from './images/matlab-icon-logo.png'
 
 function Projects() {
   return (
@@ -19,6 +23,13 @@ function Projects() {
       <a href= "https://github.com/hganchev">
         <img className='img-logo' src= {gitLogo} />
       </a>
+      <h2>Programming languages</h2>
+        <p>
+          <img className='img-logo' src = {clogo}/>
+          <img className='img-logo' src = {pylogo}/>
+          <img className='img-logo' src = {arduinologo}/>
+          <img className='img-logo' src = {matlogo}/>
+        </p> 
     </div>
   );
 }
