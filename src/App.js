@@ -15,10 +15,10 @@ function App() {
   return (
     <Container>
       <Grid container>
-        <Grid item lg={3} md={4} sm={12} xs={12} style={{backgroundColor: 'blue'}}>
-          <AboutMe/>
+        <Grid item lg={3} md={4} sm={12} xs={12}>
+          {/* <AboutMe/> */}
         </Grid>
-        <Grid item xs style={{backgroundColor: 'red'}}>
+        <Grid item xs>
           <Router>
             <Header />
             <div className='main-content container_shadow'>
