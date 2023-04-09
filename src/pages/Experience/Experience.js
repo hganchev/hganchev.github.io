@@ -1,55 +1,26 @@
 import React from 'react';
 import './Experience.css'
-import MyTimeLine from '../../components/MyTimeLine';
-import SlideControl from '../../components/SlideControl';
+import { Grid, Typography, Icon} from '@mui/material';
+import MyTimeLine, { CustomTimelineSeparator } from '../../components/MyTimeLine';
+import resumeData from '../../utils/resumeData';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
 
 import BachlorThesis from "./thesis/BThesis_EN.pdf"
 import MasterThesis from "./thesis/MThesis_EN.pdf"
-
-const listElementsCareer = [
-  {
-    date: '2017 - present',
-    title: 'Software Design Engineer at SENSATA Technologies',
-    subtitle: 'Software Design Engineer',
-    description: 'At SENSATA Technologies, I was responsible for designing and implementing control systems for HTS(high temperature sensors) equipment. This involved using programming languages such as Structured Text and Ladder Logic, and developing communication protocols to interface with external systems. I also participated in the testing and validation of control systems.',
-    skills: 'industrial PLC , Camera , Robot programming, compliece with project requirements',
-  },
-  {
-    date: '2018 - 2019',
-    title: 'Automation Engineer at KOSTAL',
-    subtitle: 'Automation Engineer',
-    description: 'At KOSTAL, I worked on software development projects for automotive applications. My primary focus was on designing and implementing software for embedded systems, and I gained experience in C#, Visual Basic, TwinCAT ST programming languages. I also worked on integrating new software modules into existing systems and testing software to ensure compliance with project requirements.',
-    skills: 'industrial PLC , Camera , Robot programming, compliece with project requirements',
-  },
-  {
-    date: '2019 - 2020',
-    title: 'Production Engineer at ABB',
-    subtitle: 'Production Engineer',
-    description: 'At ABB, I worked on a automated line. My main responsibilities involved control of the flow of materials as well the maintanance of the industrial machines, troubleshooting and resolving technical issues.',
-    skills: 'teamwork, problem solving',
-  },
-]
-
-const listElementsEducation = [
-  {
-    date: '2017 - 2021',
-    title: 'Technical University of Sofia, branch Plovdiv',
-    subtitle: 'Bachelor of Science in Automation, Information and Control Theory',
-    description: 'At the Technical University of Sofia, I majored in Automation, Information and Control Theory. My studies included a wide range of subjects, including mathematics, physics, computer science, and engineering. I also took courses in programming, robotics, and automation.',
-  },
-  {
-    date: '2021 - 2023',
-    title: 'Technical University of Sofia, branch Plovdiv',
-    subtitle: 'Master of Science in Automation, Information and Control Theory',
-    description: 'At the Technical University of Sofia, I majored in Automation, Information and Control Theory. My studies included a wide range of subjects, including mathematics, physics, computer science, and engineering. I also took courses in programming, robotics, and automation.',
-  },
-]
+import { 
+  TimelineSeparator
+  ,TimelineDot
+  ,TimelineConnector
+  ,TimelineContent
+  ,TimelineItem
+ } from '@mui/lab';
 
 function Experience() {
   return (
     <div id='exp-page'>
       {/* Career Section  */}
-      <section>
+      {/* <section>
         <h3>Career</h3>
         <p>
           After completing my studies, I started my career in engineering companies such as ABB, KOSTAL, and SENSATA, where I worked on diverse projects in automation, robotics, and programming.
@@ -65,15 +36,109 @@ function Experience() {
           Overall, I am an enthusiastic and dedicated individual who is passionate about technology, robotics, and programming. 
           I am always eager to learn and grow, and I am excited to see where my skills and experiences will take me in the future.
         </p>
-      </section>
-      <MyTimeLine listElements = {listElementsCareer} />
+      </section> */}
+
+      {/* About Section  */}
+      <Grid conteiner className='section pb_45'>
+        <Grid item className='section_title mb_30'>
+          <span></span>
+          <h6 className='section_title_text'>About Me </h6>
+        </Grid>
+        <Grid item>
+          <Typography variant='body2' className='aboutme_text'>
+            {resumeData.about}
+          </Typography>
+        </Grid>
+      </Grid>
+
+      {/* Resume Section  */}
+      <Grid conteiner className='section'>
+        <Grid item className='section_title mb_30'>
+          <span></span>
+          <h6 className='section_title_text'>Work Experience</h6>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container className='resume_timeline'>
+              {/* Experience */}
+              <Grid item xs={12} sm={6} md={3}>
+                  <MyTimeLine 
+                  title="Work Experience"
+                  icon={<WorkIcon/>}>
+                    {resumeData.experiences.map((experience) => (
+                      <TimelineItem>
+                        <CustomTimelineSeparator/>
+                        <TimelineContent className='timeline_content'>
+                          <Typography className='timeline_title'>
+                            {experience.title}
+                          </Typography>
+                          <Typography variant='caption' className='timeline_date'>
+                            {experience.date}
+                          </Typography>
+                          <Typography variant='body2' className='timeline_description'>
+                            {experience.description}
+                          </Typography>
+                        </TimelineContent>
+                      </TimelineItem>
+                    ))}
+                  </MyTimeLine>
+              </Grid>
+              {/* Education */}
+              <Grid item xs={12} sm={6} md={3}>
+                  <MyTimeLine 
+                  title="Education"
+                  icon={<SchoolIcon/>}>
+                    {resumeData.education.map((education) => (
+                      <TimelineItem>
+                        <CustomTimelineSeparator/>
+                        <TimelineContent className='timeline_content'>
+                          <Typography className='timeline_title'>
+                            {education.title}
+                          </Typography>
+                          <Typography variant='caption' className='timeline_date'>
+                            {education.date}
+                          </Typography>
+                          <Typography variant='body2' className='timeline_description'>
+                            {education.description}
+                          </Typography>
+                        </TimelineContent>
+                      </TimelineItem>
+                    ))}
+                  </MyTimeLine>
+              </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      {/* Services */}
+      <Grid conteiner className='section'>
+        <Grid item className='section_title mb_30'>
+          <span></span>
+          <h6 className='section_title_text'>Services </h6>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container>
+            {resumeData.services.map((service) => (
+              <Grid item xs={12} sm={6} md={3}>
+                <div className= 'service'>
+                  <Icon className='service_icon'>{service.icon}</Icon>
+                  <Typography className='service_title' variant='h6'>
+                    {service.title}
+                  </Typography>
+                  <Typography className='service_description' variant='body2'>
+                    {service.description}
+                  </Typography>
+                </div>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
 
       {/* Education Section  */}
-      <MyTimeLine listElements = {listElementsEducation} />
-      <SlideControl fileUrl={BachlorThesis}
+      {/* <SlideControl fileUrl={BachlorThesis}
                       title='Bachlor Thesis'/>
       <SlideControl fileUrl={MasterThesis}
-                      title='Master Thesis' />
+                      title='Master Thesis' /> */}
     </div>
   );
 }

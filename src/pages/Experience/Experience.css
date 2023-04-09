@@ -1,25 +1,23 @@
-#exp-page p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+/* About me section */
+.aboutme_text{
+    color: darkslategray !important;
+    font: smaller !important;
+    line-height: 22px !important;
+    white-space: pre-line !important;
 }
-#exp-page h3{
-    font-size: 15px;
-    color: rgb(253, 203, 110);
+
+/* Timeline section */
+.resume_timeline .timeline_content .timeline_title{
+    font-size: 16px !important;
+    font-weight: 500 !important;
 }
-#exp-page .img-logo {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+
+.resume_timeline .timeline_content .timeline_date{
+    color: darkslategray
 }
-#exp-page section {
-    padding: 20px 0;
-}
-#exp-page section h3{
-    font-size: 34px;
-    padding: 5px;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: underline overline orange;
+
+.resume_timeline .timeline_content .timeline_description{
+    color: gray !important;
+    font-size: small !important;
+    margin-top: 6px;
 }
