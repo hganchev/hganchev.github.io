@@ -92,19 +92,3 @@
   overflow: auto;
   font-family: 'Courier New', Courier, monospace;
 }
-
-/* About Me Section */
-/* Studies */
-#about-page .about-me-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 12px;
-}
-
-#about-page .about-me-grid-item {
-  min-height: 400px;
-  min-width: 400px;
-}
-
-/* Career */
