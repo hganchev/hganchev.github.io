@@ -23,7 +23,9 @@ export default {
     phone: '',
     address: 'Sofia, Bulgaria',
     picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
-
+    moto: `I am a passionate individual who has a deep 
+            interest in the world of technology, robotics, 
+            machines, and machine learning.`,
     socials: {
         discord: {
             link: 'https://discordapp.com/users/hganchev#7123',

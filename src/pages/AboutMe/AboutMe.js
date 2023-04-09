@@ -3,22 +3,24 @@ import "./AboutMe.css";
 import resumeData from '../../utils/resumeData';
 import PrintView from '../../utils/PrintView';
 
+import { Typography } from '@mui/material';
+
 function AboutMe() {
   return (
-    <div className='about'>   
+    <div className='about container_shadow'>   
       {/* Info Section  */}
-      <h1>
-        Hristo Ganchev
-      </h1> 
-      <h2>
-        Software Engineer
-      </h2>
+      <Typography variant='h3'>
+        {resumeData.name}
+      </Typography>
+      <Typography variant='h5'>
+        {resumeData.title}
+      </Typography>
       <div className='about-picture'>
         {resumeData.picture}
       </div>
-      <p>
-        I am a passionate individual who has a deep interest in the world of technology, robotics, machines, and machine learning.
-      </p>
+      <Typography variant='h7'>
+        {resumeData.moto}
+      </Typography>
       {/* Print*/}
       <PrintView message="Everything can be automated!"/>
       <PrintView message="Everything can be controlled!"/>
