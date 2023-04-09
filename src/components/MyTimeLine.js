@@ -12,7 +12,7 @@ import './MyTimeLine.css'
 
 export default function MyTimeLine({title, icon, children}) {
     return (
-        <TimeLine position="alternate" className={"timeline"}>
+        <TimeLine position="right" className={"timeline"}>
             {/* Header */}
             <TimelineItem className={'timeline_fist'}>
                 <TimelineSeparator>
@@ -29,14 +29,6 @@ export default function MyTimeLine({title, icon, children}) {
             </TimelineItem>
 
             {children}
-
-            {/* Body */}
-            {/* <TimelineItem>
-                <CustomTimelineSeparator/>
-                <TimelineContent>
-                    Code
-                </TimelineContent>
-            </TimelineItem> */}
         </TimeLine>
     )
 }

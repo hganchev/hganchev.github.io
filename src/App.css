@@ -1,5 +1,5 @@
 :root{
-    --main-color: yellow;
+    --main-color: orange;
 }
 
 .top_60{
@@ -22,6 +22,26 @@
     padding-bottom: 45px !important;
 }
 
+.pt_45{
+    padding-top: 45px !important;
+}
+
+.p_50{
+    padding: 50px !important;
+}
+
+.graybg{
+    background-color: #fafafa;
+}
+
+.section .line{
+    border-bottom:  solid 1px #eaeaea;
+}
+
+.section:last-child{
+    border: 0;
+}
+
 .container_shadow{
     box-shadow: 0 2px 92px 0 rgba(0,0,0,0.13);
     -webkit-box-shadow: 0 2px 92px 0 rgba(0,0,0,0.13);
@@ -35,7 +55,6 @@
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     margin-bottom: 30px;
-    padding: 30px;
 }
 
 .section_title{
@@ -59,4 +78,9 @@
     left: 0;
     opacity: 0.4;
     background-color: var(--main-color);
+}
+
+.section{
+    padding-left: 90px;
+    padding-right: 30px;
 }

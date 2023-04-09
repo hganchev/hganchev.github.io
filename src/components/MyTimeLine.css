@@ -18,7 +18,7 @@
 }
 
 .timeline .MuiTimelineItem-missingOppositeContent:before{
-    display : none;
+    display : none !important;
 }
 
 .timeline .timeline_dot_header{

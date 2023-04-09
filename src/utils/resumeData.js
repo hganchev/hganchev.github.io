@@ -86,6 +86,11 @@ export default {
             description: 'I can build a beautiful and scalable SPA using <b>HTML</b>, <b>CSS</b> and <b>React.js</b>',
             icon: <GitHubIcon />
         },
+        {
+            title: 'Web Development 2',
+            description: 'I can build a beautiful and scalable SPA using <b>HTML</b>, <b>CSS</b> and <b>React.js</b>',
+            icon: <GitHubIcon />
+        },
     ],
     skills: [
         {
@@ -96,6 +101,16 @@ export default {
                 'Material UI',
                 'Bootstrap',
                 'HTML',
+            ],
+        },
+        {
+            title: 'Backend',
+            description: [
+                'Node',
+                'Express',
+                'MongoDB',
+                'MySQL',
+                'Firebase',
             ],
         },
     ],
