@@ -8,8 +8,7 @@ import Mission from "./pages/Mission/Mission";
 import Experience from "./pages/Experience/Experience";
 import AboutMe from "./pages/AboutMe/AboutMe"
 import Dashboard from './pages/Dashboard/Dashboard';
-
-import Header from "./components/Header";
+import Header from "./components/Header";v
 
 function App() {
   return (
