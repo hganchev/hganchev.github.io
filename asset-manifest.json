@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ef14e3e.css",
-    "main.js": "/static/js/main.0892b4e5.js",
-    "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
-    "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
-    "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
-    "static/media/matlab-icon-logo.png": "/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
-    "static/media/arduino-icon-logo.png": "/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
-    "static/media/HIG_IMG.jpg": "/static/media/HIG_IMG.ffd98915eb3737dd23a9.jpg",
-    "static/media/c-icon-logo.png": "/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
-    "static/media/UrlQRCode.png": "/static/media/UrlQRCode.bce65c1744b25e06cbcc.png",
-    "static/media/python-icon-logo.png": "/static/media/python-icon-logo.3773b61d7de3dd14e7ef.png",
-    "static/media/gmail-icon-logo.png": "/static/media/gmail-icon-logo.d765005ce9d4caa3d69e.png",
-    "static/media/linkedin-icon-logo.png": "/static/media/linkedin-icon-logo.e9274126be28f07d14ca.png",
-    "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
-    "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
-    "index.html": "/index.html",
-    "main.5ef14e3e.css.map": "/static/css/main.5ef14e3e.css.map",
-    "main.0892b4e5.js.map": "/static/js/main.0892b4e5.js.map",
-    "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
+    "main.css": "/ReactJS_PortfolioWebSite/static/css/main.5ef14e3e.css",
+    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.bb99d68b.js",
+    "static/js/787.3b722d45.chunk.js": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js",
+    "static/media/BThesis_EN.pdf": "/ReactJS_PortfolioWebSite/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
+    "static/media/MThesis_EN.pdf": "/ReactJS_PortfolioWebSite/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
+    "static/media/matlab-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
+    "static/media/arduino-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
+    "static/media/HIG_IMG.jpg": "/ReactJS_PortfolioWebSite/static/media/HIG_IMG.ffd98915eb3737dd23a9.jpg",
+    "static/media/c-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
+    "static/media/UrlQRCode.png": "/ReactJS_PortfolioWebSite/static/media/UrlQRCode.bce65c1744b25e06cbcc.png",
+    "static/media/python-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/python-icon-logo.3773b61d7de3dd14e7ef.png",
+    "static/media/gmail-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/gmail-icon-logo.d765005ce9d4caa3d69e.png",
+    "static/media/linkedin-icon-logo.png": "/ReactJS_PortfolioWebSite/static/media/linkedin-icon-logo.e9274126be28f07d14ca.png",
+    "static/media/fiverr-icon-logo.svg": "/ReactJS_PortfolioWebSite/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
+    "static/media/discord-icon-logo.svg": "/ReactJS_PortfolioWebSite/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
+    "index.html": "/ReactJS_PortfolioWebSite/index.html",
+    "main.5ef14e3e.css.map": "/ReactJS_PortfolioWebSite/static/css/main.5ef14e3e.css.map",
+    "main.bb99d68b.js.map": "/ReactJS_PortfolioWebSite/static/js/main.bb99d68b.js.map",
+    "787.3b722d45.chunk.js.map": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ef14e3e.css",
-    "static/js/main.0892b4e5.js"
+    "static/js/main.bb99d68b.js"
   ]
 }
