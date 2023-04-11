@@ -18,13 +18,15 @@ function AboutMe() {
       <div className='about-picture'>
         {resumeData.picture}
       </div>
-      <Typography variant='h7'>
+      <Typography variant='h7' className='about-moto'>
         {resumeData.moto}
       </Typography>
       {/* Print*/}
-      <PrintView message="Everything can be automated!"/>
-      <PrintView message="Everything can be controlled!"/>
-      <PrintView message="Everything can be programmed!"/>
+      <Typography className='about-print'>
+        <PrintView message="Everything can be automated!"/>
+        <PrintView message="Everything can be controlled!"/>
+        <PrintView message="Everything can be programmed!"/>
+      </Typography>
 
     </div>
   );

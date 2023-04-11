@@ -105,7 +105,7 @@ export default {
         {
             title: 'Frontend',
             description: [
-                'WPF',
+                'WPF(C#)',
                 'HTML',
             ],
         },
