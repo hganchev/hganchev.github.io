@@ -10,7 +10,9 @@ import clogo from './images/c-icon-logo.png'
 import arduinologo from './images/arduino-icon-logo.png'
 import matlogo from './images/matlab-icon-logo.png'
 
-import WebIcon from '@mui/icons-material/Web';
+import PrecisionManufacturing from '@mui/icons-material/PrecisionManufacturing';
+import Schema from '@mui/icons-material/Schema';
+import DataObject from '@mui/icons-material/DataObject';
 
 export default {
     name: 'Hristo Ganchev',
@@ -45,15 +47,15 @@ export default {
     },
     education: [
         {
-            date: '2017 - 2021',
+            date: '2014 - 2015',
             title: 'Technical University of Sofia, branch Plovdiv',
-            degree: 'Bachelor of Science in Automation, Information and Control Theory',
+            degree: 'Master of Science in Automation, Information and Control Theory',
             description: 'At the Technical University of Sofia, I majored in Automation, Information and Control Theory. My studies included a wide range of subjects, including mathematics, physics, computer science, and engineering. I also took courses in programming, robotics, and automation.',
         },
         {
-            date: '2021 - 2023',
+            date: '2009 - 2014',
             title: 'Technical University of Sofia, branch Plovdiv',
-            degree: 'Master of Science in Automation, Information and Control Theory',
+            degree: 'Bachelor of Science in Automation, Information and Control Theory',
             description: 'At the Technical University of Sofia, I majored in Automation, Information and Control Theory. My studies included a wide range of subjects, including mathematics, physics, computer science, and engineering. I also took courses in programming, robotics, and automation.',
         },
     ],
@@ -66,14 +68,14 @@ export default {
             skills: 'industrial PLC , Camera , Robot programming, compliece with project requirements',
         },
         {
-            date: '2018 - 2019',
+            date: '2015 - 2017',
             title: 'Automation Engineer at KOSTAL',
             subtitle: 'Automation Engineer',
             description: 'At KOSTAL, I worked on software development projects for automotive applications. My primary focus was on designing and implementing software for embedded systems, and I gained experience in C#, Visual Basic, TwinCAT ST programming languages. I also worked on integrating new software modules into existing systems and testing software to ensure compliance with project requirements.',
             skills: 'industrial PLC , Camera , Robot programming, compliece with project requirements',
         },
         {
-            date: '2019 - 2020',
+            date: '2015 - 2015',
             title: 'Production Engineer at ABB',
             subtitle: 'Production Engineer',
             description: 'At ABB, I worked on a automated line. My main responsibilities involved control of the flow of materials as well the maintanance of the industrial machines, troubleshooting and resolving technical issues.',
@@ -82,39 +84,38 @@ export default {
     ],
     services: [
         {
-            title: 'Web Development',
-            description: `I can build a beautiful and 
-            scalable SPA using <b>HTML</b>, 
-            <b>CSS</b> and <b>React.js</b>`,
-            icon: <WebIcon/>
+            title: 'PLC programming',
+            description: <span>I can program PLCs using 
+            <b> ST</b> and <b>Ladder</b> languages</span>,
+            icon: <Schema/>
         },
         {
-            title: 'Web Development 2',
-            description: `I can build a beautiful and 
-            scalable SPA using <b>HTML</b>, 
-            <b>CSS</b> and <b>React.js</b>`,
-            icon: <WebIcon/>
+            title: 'Robot programming',
+            description: <span>I can program robots using
+            <b> URScript</b> and <b>RT Toolbox</b></span>,
+            icon: <PrecisionManufacturing/>
+        },
+        {
+            title: 'Python programming',
+            description: <span>I can program in Python</span>,
+            icon: <DataObject/>
         },
     ],
     skills: [
         {
             title: 'Frontend',
             description: [
-                'React',
-                'Redux',
-                'Material UI',
-                'Bootstrap',
+                'WPF',
                 'HTML',
             ],
         },
         {
             title: 'Backend',
             description: [
-                'Node',
-                'Express',
-                'MongoDB',
-                'MySQL',
-                'Firebase',
+                'STL(Strucured Text)',
+                'FBD(Functional Block Diagram)',
+                'Python',
+                'SQL',
             ],
         },
     ],
