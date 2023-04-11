@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactJS_PortfolioWebSite/static/css/main.7ec58094.css",
-    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.345deaa3.js",
+    "main.css": "/ReactJS_PortfolioWebSite/static/css/main.5ef14e3e.css",
+    "main.js": "/ReactJS_PortfolioWebSite/static/js/main.bb99d68b.js",
     "static/js/787.3b722d45.chunk.js": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js",
     "static/media/BThesis_EN.pdf": "/ReactJS_PortfolioWebSite/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/MThesis_EN.pdf": "/ReactJS_PortfolioWebSite/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
@@ -16,12 +16,12 @@
     "static/media/fiverr-icon-logo.svg": "/ReactJS_PortfolioWebSite/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/ReactJS_PortfolioWebSite/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/ReactJS_PortfolioWebSite/index.html",
-    "main.7ec58094.css.map": "/ReactJS_PortfolioWebSite/static/css/main.7ec58094.css.map",
-    "main.345deaa3.js.map": "/ReactJS_PortfolioWebSite/static/js/main.345deaa3.js.map",
+    "main.5ef14e3e.css.map": "/ReactJS_PortfolioWebSite/static/css/main.5ef14e3e.css.map",
+    "main.bb99d68b.js.map": "/ReactJS_PortfolioWebSite/static/js/main.bb99d68b.js.map",
     "787.3b722d45.chunk.js.map": "/ReactJS_PortfolioWebSite/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ec58094.css",
-    "static/js/main.345deaa3.js"
+    "static/css/main.5ef14e3e.css",
+    "static/js/main.bb99d68b.js"
   ]
 }
