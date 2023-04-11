@@ -10,13 +10,22 @@ function AboutMe() {
   return (
     <Grid container className='about'>   
       {/* Info Section  */}
-      <Grid item xs={12}>
-        <Typography variant='h3'>
-          {resumeData.name}
-        </Typography>
-        <Typography variant='h5'>
-          {resumeData.title}
-        </Typography>
+      <Grid item>
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            <Typography variant='h3'>
+              {resumeData.name}
+            </Typography>
+            <Typography variant='h5'>
+              {resumeData.title}
+            </Typography>
+          </Grid>
+          <Grid item xs={4} className='section_qr'>
+              {/* QR Code */}
+              {resumeData.UrlQRCode}
+          </Grid>
+        </Grid>
+        
         {/* About picture */}
         <div className='about-picture'>
           {resumeData.picture}
@@ -24,7 +33,7 @@ function AboutMe() {
         <Typography variant='h7' className='about-moto'>
           {resumeData.moto}
         </Typography>
-
+        
         {/* Print*/}
         <Typography className='about-print'>
           <PrintView message="Everything can be automated!"/>

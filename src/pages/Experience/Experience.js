@@ -20,20 +20,15 @@ function Experience() {
     <div id='exp-page'>
 
       {/* About Section  */}
-      <Grid container className='section pb_45 pt_45'>
+      <Grid conteiner className='section pb_45 pt_45'>
         <Grid item className='section_title mb_30'>
           <span></span>
           <h6 className='section_title_text'>About Me </h6>
         </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={8} className='section_text_left' >
-            <Typography variant='body2' className='aboutme_text'>
-              {resumeData.about}
-            </Typography>
-          </Grid>
-          <Grid item xs={4} className='section_text_right'>
-              {resumeData.UrlQRCode}
-          </Grid>
+        <Grid item>
+          <Typography variant='body2' className='aboutme_text'>
+            {resumeData.about}
+          </Typography>
         </Grid>
       </Grid>
 
