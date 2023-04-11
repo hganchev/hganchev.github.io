@@ -6,7 +6,6 @@ import { Container, Grid } from '@mui/material';
 import Projects from "./pages/Projects/Projects";
 import Experience from "./pages/Experience/Experience";
 import AboutMe from "./pages/AboutMe/AboutMe"
-import Dashboard from './pages/Dashboard/Dashboard';
 import Header from "./components/Header";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <Grid container>
         <Grid item lg={3} md={4} sm={8} xs={12}>
           <AboutMe/>
-          <Dashboard/>
         </Grid>
         <Grid item xs>
           <Router>

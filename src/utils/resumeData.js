@@ -10,6 +10,8 @@ import clogo from './images/c-icon-logo.png'
 import arduinologo from './images/arduino-icon-logo.png'
 import matlogo from './images/matlab-icon-logo.png'
 
+import UrlQRCode from './images/UrlQRCode.png';
+
 import PrecisionManufacturing from '@mui/icons-material/PrecisionManufacturing';
 import Schema from '@mui/icons-material/Schema';
 import DataObject from '@mui/icons-material/DataObject';
@@ -24,10 +26,11 @@ export default {
     email: 'hristo.iliev.ganchev@gmail.com',
     phone: '',
     address: 'Sofia, Bulgaria',
-    picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
     moto: `I am a passionate individual who has a deep 
-            interest in the world of technology, robotics, 
-            machines, and machine learning.`,
+    interest in the world of technology, robotics, 
+    machines, and machine learning.`,
+    picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
+    UrlQRCode: <img src={UrlQRCode}/>,
     socials: {
         discord: {
             link: 'https://discordapp.com/users/hganchev#7123',

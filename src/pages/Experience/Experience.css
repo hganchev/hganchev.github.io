@@ -6,6 +6,21 @@
     white-space: pre-line !important;
 }
 
+.section_text_left{
+    text-align: left !important;
+    justify-content: space-between !important;
+}
+
+.section_text_right{
+    width: 124px !important;
+}
+
+.section_text_right img{
+    width: 100% !important;
+    width: 100% !important;
+    object-fit: contain !important;
+}
+
 /* Timeline section */
 .resume_timeline .timeline_content .timeline_title{
     font-size: 16px !important;
