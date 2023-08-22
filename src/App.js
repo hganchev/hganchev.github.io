@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { Container, Grid } from '@mui/material';
 
 import Projects from "./pages/Projects/Projects";
-import Experience from "./pages/Experience/Experience";
+import Resume from "./pages/Resume/Resume";
 import AboutMe from "./pages/AboutMe/AboutMe"
 import Header from "./components/Header";
 
@@ -20,7 +20,7 @@ function App() {
             <Header />
             <div className='main-content container_shadow'>
               <Routes>
-                <Route path="/" element={<Experience />}/>
+                <Route path="/" element={<Resume />}/>
                 <Route path="/portfolio" element={<Projects />}/>
               </Routes>  
             </div>

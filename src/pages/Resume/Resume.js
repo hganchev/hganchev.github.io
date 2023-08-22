@@ -1,5 +1,5 @@
 import React from 'react';
-import './Experience.css'
+import './Resume.css'
 
 import { Grid, Typography, Paper} from '@mui/material';
 import MyTimeLine, { CustomTimelineSeparator } from '../../components/MyTimeLine';
@@ -15,7 +15,7 @@ import {
   ,TimelineItem
  } from '@mui/lab';
 
-function Experience() {
+function Resume() {
   return (
     <div id='exp-page'>
 
@@ -144,4 +144,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Resume;

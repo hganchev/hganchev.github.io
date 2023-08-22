@@ -27,7 +27,7 @@ const Header = (props) =>{
 
         <Navbar.Collapse>
             <Nav className='header_left'>
-                {/* About */}
+                {/* Resume */}
                 <Nav.Link as={NavLink} 
                 to='/' 
                 className={pathName == '/'? 'header_link_active': 'header_link'}>

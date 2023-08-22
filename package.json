@@ -2,7 +2,7 @@
   "name": "my-porfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hganchev.github.io/ReactJS_PortfolioWebSite",
+  "homepage": "https://hganchev.github.io",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
