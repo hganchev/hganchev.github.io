@@ -33,6 +33,19 @@
 
 .projects .item {
   background-color: var(--main-color);
+<<<<<<< HEAD
   border-radius: 10px;
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.7) !important;
+=======
+  min-height: 350px;
+  min-width: 350px;
+  border-radius: 10px;
+}
+
+.projects .item img {
+  width: 100% !important;
+  width: 100% !important;
+  object-fit: contain !important;
+  padding: 10px;
+>>>>>>> efec6e7ffd10b6608686062d453a0343ceb2a657
 }

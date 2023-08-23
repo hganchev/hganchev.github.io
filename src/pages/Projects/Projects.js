@@ -12,17 +12,14 @@ function Projects() {
         <h1 className='section_title_text s_40'> Projects </h1>
       </div>
       <div class="grid">
-        
-        {projectData.projects.map((project) => (
-          console.log(project.url),
-          <div class="item">
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
-              {/* <img src={project.url} alt={project.name} /> */}
-              {project.name}
-            </a>
-            <p> {project.description}</p>
-          </div>
-        ))}
+      {projectData.projects.map((project) => (
+        <div class="item">
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            {/* <img src={'../thesis/HIG_IMG.jpg'}/> */}
+            {project.name}
+          </a>
+        </div>
+      ))}
       </div>  
     </div>
   );
