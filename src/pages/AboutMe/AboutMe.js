@@ -1,7 +1,7 @@
 import React from 'react';
 import "./AboutMe.css";
 import resumeData from '../../utils/resumeData';
-import PrintView from '../../utils/PrintView';
+import PrintView from '../../components/PrintView';
 import Dashboard from '../Dashboard/Dashboard';
 
 import { Grid, Typography } from '@mui/material';
