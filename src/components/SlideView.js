@@ -2,10 +2,10 @@ import React, { useState, Component } from 'react';
 // import { Document, Page, pdfjs } from "react-pdf";
 import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-import "./SlideControl.css"
+import "./SlideView.css"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function SlideControl({fileUrl = "", title = ""}){
+function SlideView({fileUrl = "", title = ""}){
 	const [numPages, setNumPages] = useState(null);
 	const [pageNumber, setPageNumber] = useState(1);
 	const [renderedPageNumber, setRenderedPageNumber] = useState(null);
@@ -70,4 +70,4 @@ function SlideControl({fileUrl = "", title = ""}){
 	);
 };
 
-export default SlideControl;
+export default SlideView;

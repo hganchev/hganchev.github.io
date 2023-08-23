@@ -1,20 +1,16 @@
-import HIGImage from "./images/HIG_IMG.jpg"
-import linkedinLogo from './images/linkedin-icon-logo.png'
-import discordLogo from './images/discord-icon-logo.svg'
-import gmailLogo from './images/gmail-icon-logo.png'
-import fiverrLogo from './images/fiverr-icon-logo.svg'
-import gitLogo from './images/github-icon-logo-black.png'
+import HIGImage from "../assets/images/HIG_IMG.jpg"
+import UrlQRCode from '../assets/images/UrlQRCode.png';
 
-import pylogo from './images/python-icon-logo.png'
-import clogo from './images/c-icon-logo.png'
-import arduinologo from './images/arduino-icon-logo.png'
-import matlogo from './images/matlab-icon-logo.png'
-
-import UrlQRCode from './images/UrlQRCode.png';
-
-import PrecisionManufacturing from '@mui/icons-material/PrecisionManufacturing';
-import Schema from '@mui/icons-material/Schema';
-import DataObject from '@mui/icons-material/DataObject';
+// icons
+import linkedinLogo from '../assets/images/icons/linkedin-icon-logo.png'
+import discordLogo from '../assets/images/icons/discord-icon-logo.svg'
+import gmailLogo from '../assets/images/icons/gmail-icon-logo.png'
+import fiverrLogo from '../assets/images/icons/fiverr-icon-logo.svg'
+import gitLogo from '../assets/images/icons/github-icon-logo-black.png'
+import pylogo from '../assets/images/icons/python-icon-logo.png'
+import clogo from '../assets/images/icons/c-icon-logo.png'
+import arduinologo from '../assets/images/icons/arduino-icon-logo.png'
+import matlogo from '../assets/images/icons/matlab-icon-logo.png'
 
 export default {
     name: 'Hristo Ganchev',
@@ -90,18 +86,18 @@ export default {
             title: 'PLC programming',
             description: <span>I can program PLCs using 
             <b> ST</b> and <b>Ladder</b> languages</span>,
-            icon: <Schema/>
+            icon: arduinologo
         },
         {
             title: 'Robot programming',
             description: <span>I can program robots using
             <b> URScript</b> and <b>RT Toolbox</b></span>,
-            icon: <PrecisionManufacturing/>
+            icon: arduinologo
         },
         {
             title: 'Python programming',
             description: <span>I can program in Python</span>,
-            icon: <DataObject/>
+            icon: pylogo
         },
     ],
     skills: [

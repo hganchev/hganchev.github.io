@@ -36,7 +36,7 @@ function Resume() {
       <Grid container className='section pb_45'>
         <Grid item className='section_title mb_30'>
           <span></span>
-          <h6 className='section_title_text'>Work Experience</h6>
+          <h6 className='section_title_text'>Experience Timeline</h6>
         </Grid>
         <Grid item xs={12}>
           <Grid container className='resume_timeline'>
@@ -102,7 +102,7 @@ function Resume() {
               <Grid item xs={12} sm={6} md={3}>
                 <div className= 'service'>
                   <div className='service_icon'>
-                    {service.icon}
+                    <img src={service.icon} className='service_img_icon'/>
                   </div>
                   <Typography className='service_title' variant='h6'>
                     {service.title}

@@ -8,20 +8,31 @@
     padding: 5px;
 }
 
-.projects h2{
-  color: rgb(0, 130, 243);
+.projects h5{
+  display: flex;
+  justify-content: center;
+}
+
+.projects a{
+  color: black;
+}
+
+.projects p{
+  color: gray;
+  display: flex;
+  justify-content: center;
 }
 
 .projects .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 350px));
   grid-gap: 14px;
-  margin: 40px;
+  margin: 10px;
 }
 
 .projects .item {
   background-color: var(--main-color);
-  min-height: 350px;
-  min-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.7) !important;
 }
