@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8bfc254.css",
-    "main.js": "/static/js/main.ac99d33a.js",
+    "main.css": "/static/css/main.01dad19e.css",
+    "main.js": "/static/js/main.832b3498.js",
     "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
     "pdf.worker.js": "/ff6ade699035dbcc5609d39058c23f1e.js",
-    "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
-    "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
     "static/media/matlab-icon-logo.png": "/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
     "static/media/arduino-icon-logo.png": "/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
     "static/media/HIG_IMG.jpg": "/static/media/HIG_IMG.ffd98915eb3737dd23a9.jpg",
@@ -17,12 +15,12 @@
     "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
-    "main.c8bfc254.css.map": "/static/css/main.c8bfc254.css.map",
-    "main.ac99d33a.js.map": "/static/js/main.ac99d33a.js.map",
+    "main.01dad19e.css.map": "/static/css/main.01dad19e.css.map",
+    "main.832b3498.js.map": "/static/js/main.832b3498.js.map",
     "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8bfc254.css",
-    "static/js/main.ac99d33a.js"
+    "static/css/main.01dad19e.css",
+    "static/js/main.832b3498.js"
   ]
 }
