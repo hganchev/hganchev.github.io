@@ -1,29 +1,22 @@
 import BachelorThesis from '../assets/projects/BThesis_EN.pdf';
 import MasterThesis from '../assets/projects/MThesis_EN.pdf';
 
-import ThreeWheeledRobot from './projects/thesis/three-wheeled.jpg';
-
+import MobileRobot from '../assets/projects/images/MobileRobot.jpg';
+import ImageRef from '../assets/projects/images/ImageRef.png';
 
 export default {
     projects: [
         {
             name: 'Synthesis of control of mobile robot',
+            img: MobileRobot,
             url: BachelorThesis,
             description: 'This is my bachelor thesis',
         },
         {
             name: 'Control of industrial manipulator',
+            img: ImageRef,
             url: MasterThesis,
-            name: 'Bachelor Thesis',
-            img: ThreeWheeledRobot,
-            url: Bthesis,
-            description: 'This is my bachelor thesis',
-        },
-        {
-            name: 'Master Thesis',
-            img: ThreeWheeledRobot,
-            url: Mthesis,
             description: 'This is my master thesis',
-        },
+        }
     ],
 }

@@ -11,6 +11,8 @@ import pylogo from '../assets/images/icons/python-icon-logo.png'
 import clogo from '../assets/images/icons/c-icon-logo.png'
 import arduinologo from '../assets/images/icons/arduino-icon-logo.png'
 import matlogo from '../assets/images/icons/matlab-icon-logo.png'
+import industrialrobotlogo from '../assets/images/icons/industrial-robot-logo-icon.jpg'
+import plclogo from '../assets/images/icons/plc-icon-logo.png'
 
 export default {
     name: 'Hristo Ganchev',
@@ -86,18 +88,23 @@ export default {
             title: 'PLC programming',
             description: <span>I can program PLCs using 
             <b> ST</b> and <b>Ladder</b> languages</span>,
-            icon: arduinologo
+            icon: plclogo
         },
         {
             title: 'Robot programming',
             description: <span>I can program robots using
             <b> URScript</b> and <b>RT Toolbox</b></span>,
-            icon: arduinologo
+            icon: industrialrobotlogo
         },
         {
             title: 'Python programming',
             description: <span>I can program in Python</span>,
             icon: pylogo
+        },
+        {
+            title: 'Arduino programming',
+            description: <span>I can program in Arduino</span>,
+            icon: arduinologo
         },
     ],
     skills: [
@@ -115,6 +122,13 @@ export default {
                 'FBD(Functional Block Diagram)',
                 'Python',
                 'SQL',
+            ],
+        },
+        {
+            title: 'Robotics',
+            description: [
+                'Mitsubishi Robots',
+                'Universal Robots',
             ],
         },
     ],
