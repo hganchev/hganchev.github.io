@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.8446b5e5.css",
-    "main.js": "/static/js/main.fecbb1a1.js",
+    "main.css": "/static/css/main.35ab4e58.css",
+    "main.js": "/static/js/main.1b745276.js",
     "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
+    "static/media/MobileRobot.jpg": "/static/media/MobileRobot.f0b004bf6adc3a0fa02f.jpg",
     "static/media/matlab-icon-logo.png": "/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
     "static/media/arduino-icon-logo.png": "/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
+    "static/media/industrial-robot-logo-icon.jpg": "/static/media/industrial-robot-logo-icon.18a8abd54ec7b0071911.jpg",
     "static/media/HIG_IMG.jpg": "/static/media/HIG_IMG.ffd98915eb3737dd23a9.jpg",
     "static/media/c-icon-logo.png": "/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
     "static/media/UrlQRCode.png": "/static/media/UrlQRCode.bce65c1744b25e06cbcc.png",
     "static/media/python-icon-logo.png": "/static/media/python-icon-logo.3773b61d7de3dd14e7ef.png",
+    "static/media/plc-icon-logo.png": "/static/media/plc-icon-logo.9f964964380a496e5cc5.png",
     "static/media/gmail-icon-logo.png": "/static/media/gmail-icon-logo.d765005ce9d4caa3d69e.png",
     "static/media/linkedin-icon-logo.png": "/static/media/linkedin-icon-logo.e9274126be28f07d14ca.png",
     "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
-    "main.8446b5e5.css.map": "/static/css/main.8446b5e5.css.map",
-    "main.fecbb1a1.js.map": "/static/js/main.fecbb1a1.js.map",
+    "main.35ab4e58.css.map": "/static/css/main.35ab4e58.css.map",
+    "main.1b745276.js.map": "/static/js/main.1b745276.js.map",
     "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8446b5e5.css",
-    "static/js/main.fecbb1a1.js"
+    "static/css/main.35ab4e58.css",
+    "static/js/main.1b745276.js"
   ]
 }
