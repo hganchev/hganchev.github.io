@@ -24,4 +24,12 @@
   background-color: var(--main-color);
   min-height: 350px;
   min-width: 350px;
+  border-radius: 10px;
+}
+
+.projects .item img {
+  width: 100% !important;
+  width: 100% !important;
+  object-fit: contain !important;
+  padding: 10px;
 }

@@ -14,8 +14,10 @@ function Projects() {
       <div class="grid">
       {projectData.projects.map((project) => (
         <div class="item">
+          <h2>{project.name}</h2>
+          <img src={project.img}/>
+          <p> {project.description}</p>
           <a href={project.url} target="_blank" rel="noopener noreferrer">
-            {/* <img src={'../thesis/HIG_IMG.jpg'}/> */}
             {project.name}
           </a>
         </div>
