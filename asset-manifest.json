@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3acda680.css",
-    "main.js": "/static/js/main.a093fcfb.js",
+    "main.css": "/static/css/main.1adfd532.css",
+    "main.js": "/static/js/main.2916f7a5.js",
     "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
@@ -19,12 +19,12 @@
     "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
-    "main.3acda680.css.map": "/static/css/main.3acda680.css.map",
-    "main.a093fcfb.js.map": "/static/js/main.a093fcfb.js.map",
+    "main.1adfd532.css.map": "/static/css/main.1adfd532.css.map",
+    "main.2916f7a5.js.map": "/static/js/main.2916f7a5.js.map",
     "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3acda680.css",
-    "static/js/main.a093fcfb.js"
+    "static/css/main.1adfd532.css",
+    "static/js/main.2916f7a5.js"
   ]
 }
