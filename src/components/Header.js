@@ -6,6 +6,7 @@ import withRouter from '../utils/withRouter'
 
 import resumeData from '../utils/resumeData';
 import './Header.css'
+import { Collapse, collapseClasses } from '@mui/material';
 
 const Header = (props) =>{
     const pathName = props?.router?.location?.pathname;
@@ -23,7 +24,7 @@ const Header = (props) =>{
             </Navbar.Brand>
         </Nav.Link>
 
-        <Navbar.Toggle/>
+        <Navbar.Toggle defaultValue={Collapse}/>
 
         <Navbar.Collapse>
             <Nav className='header_left'>

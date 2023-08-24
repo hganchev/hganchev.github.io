@@ -28,11 +28,13 @@
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
+
 .header .header_right{
     margin-right: 0;
     margin-left: auto;
     align-items: center;
 }
+
 .header .header_right > a > img{
     color: black;
     margin-right: 12px;
@@ -40,6 +42,7 @@
     width: 20px;
     resize: both;
 }
+
 .header .header_left{
     display: flex !important;
     align-items: center !important;

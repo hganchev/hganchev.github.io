@@ -36,7 +36,7 @@
     color: gray !important;
     border-color: var(--main-color) !important;
     margin-right: 5px !important;
-    text-align: center;
+    text-align: left;
 }
 .service_icon > .MuiSvgIcon-root{
     font-size: 46px !important;
