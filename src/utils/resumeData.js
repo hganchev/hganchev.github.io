@@ -18,9 +18,9 @@ export default {
     name: 'Hristo Ganchev',
     title: 'Software Engineer',
     about: `I am a software engineer!
-            I enjoy creating software that improves the lives of those around me.
-            \n\n I am a fast learner and I am always willing to learn new skills to better
-            myself and the people around me.`,
+            I enjoy creating new things. 
+            I am a fast learner and I am always willing to \
+            learn new skills to improve myself. `,
     email: 'hristo.iliev.ganchev@gmail.com',
     phone: '',
     address: 'Sofia, Bulgaria',

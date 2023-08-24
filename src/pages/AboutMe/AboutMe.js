@@ -35,11 +35,13 @@ function AboutMe() {
         </Typography>
         
         {/* Print*/}
-        <Typography className='about-print'>
-          <PrintView message="Everything can be automated!"/>
-          <PrintView message="Everything can be controlled!"/>
-          <PrintView message="Everything can be programmed!"/>
-        </Typography>
+        <div className='about-print-container'>
+          <Typography className='about-print'>
+            <PrintView message="Everything can be automated!"/>
+            <PrintView message="Everything can be controlled!"/>
+            <PrintView message="Everything can be programmed!"/>
+          </Typography>
+        </div>
 
         {/* Dashboard*/}
         <Dashboard/>
