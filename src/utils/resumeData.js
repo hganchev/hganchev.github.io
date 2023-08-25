@@ -17,17 +17,32 @@ import plclogo from '../assets/images/icons/plc-icon-logo.png'
 export default {
     name: 'Hristo Ganchev',
     title: 'Software Engineer',
-    about: `Hello, my name is Hristo, I am a software engineer!
-            My proffessional experience is in the field of industrial automation.
-            I have experience in programming PLCs, robots, and embedded systems.
-            I am also interested in machine learning and computer vision.
-            I am currently looking for new opportunities in the field of software engineering.`,
+    about: `Hello, my name is Hristo, I have 8+ years of experience in Software Engineer \
+    with a passion for learning more about technology. With a strong background in machine \
+    software development and an interest in electronics, I thrive on solving complex \
+    problems and bringing innovative ideas to life.\
+
+    My journey has led me to continuously strive for excellence in software engineering, \
+    improving my skills to deliver robust and efficient solutions. My dedication to continuous \
+    learning has driven me to explore electronics and 3D printing, allowing me \
+    to approach challenges with a multidisciplinary perspective.
+
+    As I progress in my career, I aspire to not only excel as a Senior Software Developer but also \
+    to share my knowledge and insights with the community. The prospect of freelancing excites me, \
+    as it presents opportunities to work on diverse projects and contribute to various industries.
+
+    Beyond my technical prowess, I am committed to fostering growth and learning. I have a strong \
+    desire to teach and mentor, enabling others to navigate the ever-evolving landscape of software \
+    development. Whether through one-on-one interactions or educational content, I aim to empower fellow\
+    enthusiasts and aspiring developers.
+
+    Let's connect and collaborate on projects that push boundaries and create meaningful impact. \
+    Together, we can embrace innovation, harness the power of technology, and inspire others in their own journeys`,
+
     email: 'hristo.iliev.ganchev@gmail.com',
     phone: '',
     address: 'Sofia, Bulgaria',
-    moto: ` I am a passionate individual who has 
-    interest in technology, robotics, 
-    machines, and machine learning.`,
+    moto: ` Innovating Code, Crafting Connections: Bridging Software, Electronics, and Minds.`,
     picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
     UrlQRCode: <img src={UrlQRCode}/>,
     socials: {
