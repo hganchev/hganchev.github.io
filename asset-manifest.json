@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1adfd532.css",
-    "main.js": "/static/js/main.bca640d8.js",
+    "main.js": "/static/js/main.931595cd.js",
     "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
@@ -11,7 +11,6 @@
     "static/media/industrial-robot-logo-icon.jpg": "/static/media/industrial-robot-logo-icon.18a8abd54ec7b0071911.jpg",
     "static/media/HIG_IMG.jpg": "/static/media/HIG_IMG.ffd98915eb3737dd23a9.jpg",
     "static/media/c-icon-logo.png": "/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
-    "static/media/UrlQRCode.png": "/static/media/UrlQRCode.bce65c1744b25e06cbcc.png",
     "static/media/python-icon-logo.png": "/static/media/python-icon-logo.3773b61d7de3dd14e7ef.png",
     "static/media/plc-icon-logo.png": "/static/media/plc-icon-logo.9f964964380a496e5cc5.png",
     "static/media/gmail-icon-logo.png": "/static/media/gmail-icon-logo.d765005ce9d4caa3d69e.png",
@@ -20,11 +19,11 @@
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
     "main.1adfd532.css.map": "/static/css/main.1adfd532.css.map",
-    "main.bca640d8.js.map": "/static/js/main.bca640d8.js.map",
+    "main.931595cd.js.map": "/static/js/main.931595cd.js.map",
     "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1adfd532.css",
-    "static/js/main.bca640d8.js"
+    "static/js/main.931595cd.js"
   ]
 }
