@@ -1,5 +1,5 @@
 import HIGImage from "../assets/images/HIG_IMG.jpg"
-import UrlQRCode from '../assets/images/UrlQRCode.png';
+import higQRCode from '../assets/images/qrcode_hganchev.github.io.png';
 
 // icons
 import linkedinLogo from '../assets/images/icons/linkedin-icon-logo.png'
@@ -44,7 +44,7 @@ export default {
     address: 'Sofia, Bulgaria',
     moto: ` Innovating Code, Crafting Connections: Bridging Software, Electronics, and Minds.`,
     picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
-    UrlQRCode: <img src={UrlQRCode}/>,
+    UrlQRCode: <img src={higQRCode}/>,
     socials: {
         discord: {
             link: 'https://discordapp.com/users/hganchev#7123',
