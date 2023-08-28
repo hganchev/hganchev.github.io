@@ -7,6 +7,8 @@ import Projects from "./pages/Projects/Projects";
 import Resume from "./pages/Resume/Resume";
 import AboutMe from "./pages/AboutMe/AboutMe"
 import Header from "./components/Header";
+import Articles from './pages/Articles/Articles';
+import ArticalView from './pages/Articles/ArticalView';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Resume />}/>
                 <Route path="/portfolio" element={<Projects />}/>
+                <Route path="/articles" element={<Articles />}/>
+                <Route path={`/articleview/:id`} element={<ArticalView />}/>
               </Routes>  
             </div>
           </Router>
