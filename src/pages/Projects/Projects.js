@@ -15,7 +15,9 @@ function Projects() {
       <div class="grid">
       {projectData.projects.map((project) => (
         <div class="item">
-          <h5>{project.name}</h5>
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            <h5>{project.name}</h5>
+          </a>
           <p> {project.date}</p>
           <div className='div-label'>
               <LocalOfferIcon className='label-icon'/>

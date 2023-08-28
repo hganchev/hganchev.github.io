@@ -11,14 +11,14 @@ export default {
             img: MobileRobot,
             url: BachelorThesis,
             date: "2014",
-            label: "Robotics"
+            label: "Thesis"
         },
         {
             name: 'Control of industrial manipulator',
             img: ImageRef,
             url: MasterThesis,
             date: "2015",
-            label: "Robotics"
+            label: "Thesis"
         }
     ],
 }
