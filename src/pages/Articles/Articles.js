@@ -13,18 +13,20 @@ function Articles() {
         <h1 className='section_title_text s_40'> Articles </h1>
       </div>
       <div class="grid">
-      {articleData.articles.map((article) => (    
-        <Link class="item" to={`/articleview/${article.id}`}>
-          <div class="item">
+      {articleData.articles.map((article) => (         
+        <div class="item">
+          <Link to={`/articleview/${article.id}`} class="link-h5">
             <h5>{article.name}</h5>
-            <p> {article.date}</p>
-            <div className='div-label'>
-              <LocalOfferIcon className='label-icon'/>
-              <label>{article.label}</label>   
-            </div>
-            <img src={article.img}/>      
+          </Link>
+          <p> {article.date}</p>
+          <div className='div-label'>
+            <LocalOfferIcon className='label-icon'/>
+            <label>{article.label}</label>   
           </div>
-        </Link>
+          <Link to={`/articleview/${article.id}`}>
+            <img src={article.img}/>      
+          </Link>
+        </div>
       ))}
       </div>  
     </div>

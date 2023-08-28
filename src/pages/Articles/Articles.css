@@ -27,6 +27,10 @@
     padding-left: 10px;
   }
 
+  .articles .link-h5{
+    text-decoration: none;
+  }
+
   .articles .div-label{
     display: flex;
     justify-content: right;
