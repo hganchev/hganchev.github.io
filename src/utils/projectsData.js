@@ -10,13 +10,15 @@ export default {
             name: 'Synthesis of control of mobile robot',
             img: MobileRobot,
             url: BachelorThesis,
-            description: 'This is my bachelor thesis',
+            date: "2014",
+            label: "Robotics"
         },
         {
             name: 'Control of industrial manipulator',
             img: ImageRef,
             url: MasterThesis,
-            description: 'This is my master thesis',
+            date: "2015",
+            label: "Robotics"
         }
     ],
 }

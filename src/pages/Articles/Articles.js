@@ -22,7 +22,7 @@ function Articles() {
               <LocalOfferIcon className='label-icon'/>
               <label>{article.label}</label>   
             </div>
-              <img src={article.img}/>      
+            <img src={article.img}/>      
           </div>
         </Link>
       ))}

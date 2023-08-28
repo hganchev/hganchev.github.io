@@ -1,6 +1,7 @@
 import React, { useState, Component, useEffect }  from 'react';
 import styled from "styled-components";
 import './Projects.css';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 
 import projectData from '../../utils/projectsData';
 
@@ -15,7 +16,11 @@ function Projects() {
       {projectData.projects.map((project) => (
         <div class="item">
           <h5>{project.name}</h5>
-          <p> {project.description}</p>
+          <p> {project.date}</p>
+          <div className='div-label'>
+              <LocalOfferIcon className='label-icon'/>
+              <label>{project.label}</label>   
+          </div>
           <a href={project.url} target="_blank" rel="noopener noreferrer">
             <img src={project.img}/>
           </a>
