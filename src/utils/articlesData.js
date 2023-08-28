@@ -8,14 +8,16 @@ export default {
             name: 'How to split a STRING in TwinCAT',
             img: MobileRobot,
             url: article1,
-            description: 'This is my bachelor thesis',
+            date: "August 27, 2023",
+            label: "TwinCAT"
         },
         {
             id: 2,
             name: 'Control of industrial manipulator',
             img: MobileRobot,
             url: article1,
-            description: 'This is my master thesis',
+            date: "August 27, 2023",
+            label: "Robotics"
         }
     ],
 }

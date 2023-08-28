@@ -27,6 +27,7 @@ function ArticleView() {
     }, []);
 
     return (
+        //ReactDom.render(
         <ReactMarkdown
             children={markdown}
             components={{
@@ -48,7 +49,8 @@ function ArticleView() {
             }
             }}
             remarkPlugins={[remarkGfm]}
-        />
+        />//, document.body
+        //)
     );
 }
   

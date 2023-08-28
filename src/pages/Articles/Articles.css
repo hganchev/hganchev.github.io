@@ -10,7 +10,8 @@
   
   .articles h5{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 10px;
   }
   
   .articles a{
@@ -20,7 +21,28 @@
   .articles p{
     color: gray;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    clear: both;
+    float: left;
+    padding-left: 10px;
+  }
+
+  .articles .div-label{
+    display: flex;
+    justify-content: right;
+    float: right;
+    padding-right: 10px;
+  }
+
+  .articles label{
+    color: black;
+    display: flex;
+    border-radius: 5px;
+    background-color: gray;
+  }
+
+  .articles .label-icon{
+    float: center;
   }
   
   .articles .grid {
