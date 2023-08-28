@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.1adfd532.css",
-    "main.js": "/static/js/main.931595cd.js",
+    "main.css": "/static/css/main.78ea5680.css",
+    "main.js": "/static/js/main.dca8b14a.js",
     "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
-    "static/media/MobileRobot.jpg": "/static/media/MobileRobot.f0b004bf6adc3a0fa02f.jpg",
+    "static/media/Default.jpg": "/static/media/Default.f0b004bf6adc3a0fa02f.jpg",
     "static/media/matlab-icon-logo.png": "/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
     "static/media/arduino-icon-logo.png": "/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
     "static/media/industrial-robot-logo-icon.jpg": "/static/media/industrial-robot-logo-icon.18a8abd54ec7b0071911.jpg",
@@ -15,15 +15,16 @@
     "static/media/plc-icon-logo.png": "/static/media/plc-icon-logo.9f964964380a496e5cc5.png",
     "static/media/gmail-icon-logo.png": "/static/media/gmail-icon-logo.d765005ce9d4caa3d69e.png",
     "static/media/linkedin-icon-logo.png": "/static/media/linkedin-icon-logo.e9274126be28f07d14ca.png",
+    "static/media/How to split a string in TwinCAT.md": "/static/media/How to split a string in TwinCAT.35751ab4ee2316b8d07e.md",
     "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
-    "main.1adfd532.css.map": "/static/css/main.1adfd532.css.map",
-    "main.931595cd.js.map": "/static/js/main.931595cd.js.map",
+    "main.78ea5680.css.map": "/static/css/main.78ea5680.css.map",
+    "main.dca8b14a.js.map": "/static/js/main.dca8b14a.js.map",
     "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1adfd532.css",
-    "static/js/main.931595cd.js"
+    "static/css/main.78ea5680.css",
+    "static/js/main.dca8b14a.js"
   ]
 }
