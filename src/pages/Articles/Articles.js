@@ -8,6 +8,7 @@ import articleData from '../../utils/articlesData';
 function Articles() {
   const [label, setLabel] = useState('All');
   const [articles, setArticles] = useState(articleData.articles);
+  const [articleTime, setArticleTime] = React.useState('0');
 
   // filter articles based on the label and update the articles state
   useEffect(() => {
@@ -35,7 +36,12 @@ function Articles() {
       </div>
       <div class="grid">
       {/* map the articles and display them in the grid*/}
-      {articles.map((article) => (         
+      {articles.map((article) => (   
+        // calculate article read time
+        fetch(article.url)
+        .then((res) => res.text())
+        .then((text) => setArticleTime(Math.ceil(text.split(' ').length / 220))),
+
         <div class="item">
           <Link to={`/articleview/${article.id}`} class="link-h5">
             <h5>{article.name}</h5>
@@ -45,6 +51,7 @@ function Articles() {
             <LocalOfferIcon className='label-icon'/>
             <label>{article.label}</label>   
           </div>
+          <p>{articleTime} min read</p>
           <Link to={`/articleview/${article.id}`}>
             <img src={article.img}/>      
           </Link>
