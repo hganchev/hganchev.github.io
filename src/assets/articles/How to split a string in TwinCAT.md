@@ -151,13 +151,13 @@ FOR i := 0 TO 9 DO
 
 END_FOR
 ```
-3. Third step is to check if the split value is found. 
+3. Third step is to check if the split character is found. 
 ```pascal
 IF FIND(sInputCopy, sSplitChar) > 0 THEN
 ```
 The value of the FIND function will be <b>6</b>.
 
-4. Fourth step is to copy the split value to the array. 
+4. Fourth step is to get the split value. 
 ```pascal
 sSplitValue := LEFT(sInputCopy, FIND(sInputCopy, sSplitChar) - 1);
 ```
