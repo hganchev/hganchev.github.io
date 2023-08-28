@@ -3,15 +3,16 @@
 #### Date: 2023-23-08
 
 ## Introduction
-TwinCAT is a PLC programming software from Beckhoff. It is based on Codesys and <b>IEC 61131-3</b> standard and it is used to program Beckhoff PLCs. 
 
-The five programming languages for application programming defined in the IEC 61131-3 are available in the CODESYS development environment.
+TwinCAT is a PLC programming software from Beckhoff. It is based on CODESYS and <b>IEC 61131-3</b> standard and it is used to program Beckhoff PLCs. 
 
-* IL (instruction list) is an assembler-like programming language. The IEC 61131-3 user organization PLCopen has declared this language as “deprecated”, which means it shall not be used for new projects anymore.
-* ST (structured text) is similar to programming in Pascal or C
-LD (ladder diagram) enables programmers to virtually combine relay contacts and coils
-* FBD (function block diagram) enables users to rapidly program both Boolean and analog expressions
-* SFC (sequential function chart) is convenient for programming sequential processes and flows
+>The five programming languages for application programming defined in the IEC 61131-3 are available in the CODESYS development environment.
+
+>* IL (instruction list) is an assembler-like programming language. The IEC 61131-3 user organization PLCopen has declared this language as “deprecated”, which means it shall not be used for new projects anymore.
+>* ST (structured text) is similar to programming in Pascal or C
+>* LD (ladder diagram) enables programmers to virtually combine relay contacts and coils
+>* FBD (function block diagram) enables users to rapidly program both Boolean and analog expressions
+>* SFC (sequential function chart) is convenient for programming sequential processes and flows
 
 The logic of the PLC is written in POUs (Program Organization Units). There is several types of POUs, but the most used are:
 - Function
@@ -25,7 +26,9 @@ The Program POUs are used to write the logic of the PLC.
 Spliting a string in PLC can be a challenging if you don't know what functions to use.There is several ways to do it, but I will show you one of it. 
 
 ## How TwinCAT STRING works
-TwinCAT is based on Codesys, which is a pascal like language. When you defining a string you need to do it like: 
+
+Since TwinCAT Structured Text is a pascal based when you are defining a string, you need to do it like:
+
 ```pascal 
 VAR
 	sVariable : STRING(255); 
@@ -39,6 +42,7 @@ where 255 is the length of the string.The description given from Beckhoff site i
 processes lengths between 1 and 255! If a variable is initialized with a string that is too long for the data type of the variable, TwinCAT truncates the string from the right.
 
 ## STRING functions
+
 TwinCAT has several functions that can be used to manipulate strings. The functions are:
 ```pascal
  FIND(STR1, STR2)
@@ -93,6 +97,7 @@ CONCAT(STR1, STR2)
 >Concatenation (combination) of two strings.
 
 ## What needs to be done
+
 Lets make a function that will split a string to an array of strings.
 To define a function in TwinCAT we need to do it like this:
 ```pascal
@@ -131,6 +136,7 @@ iSplitLength : INT := 0;
 ```
 
 ## Spliting the string
+
 Lets say we want to split the string 'Hello,World' with the split character of comma.
 
 1. First step is to copy the input string to the copy variable. 
@@ -192,6 +198,7 @@ END_IF
 ```
 
 ## The whole function
+
 ```pascal
 FUNCTION F_SplitString : ARRAY[0..9] OF STRING(100)
 VAR_INPUT
@@ -226,6 +233,7 @@ END_FOR
 ```
 
 ## How to use the function
+
 1. First step is to define a variable that will hold the array of strings. 
 ```pascal
 sArray : ARRAY[0..9] OF STRING(100);
@@ -243,11 +251,13 @@ sArray[1] = 'World'
 ```
 
 ## Conclusion
+
 We have made a function that will split a string to an array of strings.
 We used the predefined STRING functions from Beckhoff TwinCAT to do it.
 
-The function do not have any error handling, so if you want to use it in your project you need to add it.
+The function does not have any error handling, so if you want to use it in your project you need to add it.
 
 
 ## Example
+
 This function is used in my [twincat-tools](https://github.com/hganchev/twincat-tools/tree/main/TwinCAT%20Tools/twincat-tools/POUs/String) library.
