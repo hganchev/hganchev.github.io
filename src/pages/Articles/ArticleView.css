@@ -1,0 +1,22 @@
+.markdown-body{
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}

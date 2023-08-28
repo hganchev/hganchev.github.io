@@ -14,6 +14,7 @@ import {a11yDark, atomDark, base16AteliersulphurpoolLight, cb,
     solarizedDarkAtom, solarizedlight, synthwave84, tomorrow, 
     twilight, vs, vscDarkPlus, xonokai, zTouch} from 'react-syntax-highlighter/dist/esm/styles/prism'
 
+import './ArticleView.css'
 import articleData from '../../utils/articlesData';
 
 function ArticleView() {
@@ -29,6 +30,7 @@ function ArticleView() {
     return (
         //ReactDom.render(
         <ReactMarkdown
+            className='markdown-body'
             children={markdown}
             components={{
             code({node, inline, className, children, ...props}) {
