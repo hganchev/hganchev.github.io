@@ -72,3 +72,11 @@
     object-fit: fill !important;
     padding: 10px;
   }
+
+  .articles .dropdown {
+    position: relative;
+    float: right;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
