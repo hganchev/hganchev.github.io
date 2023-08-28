@@ -31,11 +31,6 @@ function Articles() {
           <option value='All'>All</option>
           <option value='TwinCAT'>TwinCAT</option>
           <option value='Technology'>Technology</option>
-          <option value='Health'>Health</option>
-          <option value='Business'>Business</option>
-          <option value='Science'>Science</option>
-          <option value='Sports'>Sports</option>
-          <option value='Entertainment'>Entertainment</option>
         </select>
       </div>
       <div class="grid">
