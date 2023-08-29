@@ -4,7 +4,7 @@
 
 ## Introduction
 
-TwinCAT is a PLC programming software from Beckhoff. It is based on CODESYS and <b>IEC 61131-3</b> standard and it is used to program Beckhoff PLCs. 
+TwinCAT is a PLC programming software from Beckhoff. It is based on CODESYS and **IEC 61131-3** standard and it is used to program Beckhoff PLCs. 
 
 >The five programming languages for application programming defined in the IEC 61131-3 are available in the CODESYS development environment.
 
@@ -143,7 +143,7 @@ Lets say we want to split the string 'Hello,World' with the split character of c
 ```pascal
 sInputCopy := sInput;
 ```
-The value of the copy variable will be <b>'Hello,World'</b>.
+The value of the copy variable will be **'Hello,World'**.
 
 2. Second step is to count the number of split values. 
 ```pascal
@@ -155,7 +155,7 @@ END_FOR
 ```pascal
 IF FIND(sInputCopy, sSplitChar) > 0 THEN
 ```
-The value of the FIND function will be <b>6</b>.
+The value of the FIND function will be **6**.
 
 4. Fourth step is to get the split value. 
 ```pascal
@@ -163,13 +163,13 @@ sSplitValue := LEFT(sInputCopy, FIND(sInputCopy, sSplitChar) - 1);
 ```
 We use the LEFT function to copy the split value to the variable and we subtract 1 from the FIND function because we don't want to copy the split character.
 
-The value of the split value will be <b>'Hello'</b>.
+The value of the split value will be **'Hello'**.
 
 5. Fifth step is to take the length of the split value and add the length of the split character. 
 ```pascal
 iSplitLength := LEN(sSplitValue) + 1;
 ```
-The value of the split length will be <b>6</b>.
+The value of the split length will be **6**.
 
 6. Sixth step is to define condition when the split value is not found. 
 ```pascal
@@ -183,7 +183,7 @@ END_IF
 ```pascal
 sInputCopy := DELETE(sInputCopy, iSplitLength, 1);
 ```
-The value of the copy variable will be <b>'World'</b>.
+The value of the copy variable will be **'World'**.
 
 8. Eighth step is to copy the split value to the array. 
 ```pascal
