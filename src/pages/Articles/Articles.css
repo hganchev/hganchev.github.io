@@ -70,7 +70,7 @@
     width: 100% !important;
     height: 68% !important;
     object-fit: fill !important;
-    padding: 10px;
+    border-radius: 0 0px 10px 10px;
   }
 
   .articles .dropdown {
