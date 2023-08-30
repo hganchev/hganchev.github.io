@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.c30c5498.css",
-    "main.js": "/static/js/main.7cf9cd12.js",
+    "main.css": "/static/css/main.0c40b182.css",
+    "main.js": "/static/js/main.80c8451b.js",
     "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
-    "static/media/HelloWorld.png": "/static/media/HelloWorld.63576da99cb8ce020a6a.png",
     "static/media/Default.jpg": "/static/media/Default.f0b004bf6adc3a0fa02f.jpg",
+    "static/media/REAL-LREAL.png": "/static/media/REAL-LREAL.6ea051f012a3ad9d5fd5.png",
+    "static/media/HelloWorld.png": "/static/media/HelloWorld.5015149e5103fb992f31.png",
     "static/media/matlab-icon-logo.png": "/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
     "static/media/arduino-icon-logo.png": "/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
     "static/media/industrial-robot-logo-icon.jpg": "/static/media/industrial-robot-logo-icon.18a8abd54ec7b0071911.jpg",
@@ -19,12 +20,12 @@
     "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
-    "main.c30c5498.css.map": "/static/css/main.c30c5498.css.map",
-    "main.7cf9cd12.js.map": "/static/js/main.7cf9cd12.js.map",
+    "main.0c40b182.css.map": "/static/css/main.0c40b182.css.map",
+    "main.80c8451b.js.map": "/static/js/main.80c8451b.js.map",
     "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c30c5498.css",
-    "static/js/main.7cf9cd12.js"
+    "static/css/main.0c40b182.css",
+    "static/js/main.80c8451b.js"
   ]
 }
