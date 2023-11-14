@@ -42,7 +42,7 @@ export default {
     email: 'hristo.iliev.ganchev@gmail.com',
     phone: '',
     address: 'Sofia, Bulgaria',
-    moto: ` Innovating Code, Crafting Connections: Bridging Software, Electronics, and Minds.`,
+    moto: ` I want to contribute with my knowledge to the world of automation, robotics and control.`,
     picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
     UrlQRCode: <img src={higQRCode}/>,
     socials: {
