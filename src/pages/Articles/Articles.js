@@ -40,7 +40,8 @@ function Articles() {
         // calculate article read time
         fetch(article.url)
         .then((res) => res.text())
-        .then((text) => setArticleTime(Math.ceil(text.split(' ').length / 225))),
+        .then((text) => setArticleTime(7)),
+        // .then((text) => setArticleTime(Math.ceil(text.split(' ').length / 220.0))),
 
         <div class="item">
           <Link to={`/articleview/${article.id}`} class="link-h5">

@@ -1,6 +1,7 @@
 import DefaultImage from '../assets/projects/images/Default.jpg';
 import HelloWorld from '../assets/articles/images/HelloWorld.png';
 import RealLreal from '../assets/articles/images/REAL-LREAL.png';
+import AxisControl from '../assets/articles/images/Axis-Control.png';
 
 export default {
     articles: [
@@ -21,9 +22,9 @@ export default {
             label: "TwinCAT"
         },
         {
-            id: 1,
+            id: 2,
             name: 'How to control axis/motor in TwinCAT/Codesys',
-            img: RealLreal,
+            img: AxisControl,
             url: "https://raw.githubusercontent.com/hganchev/hganchev-articles/main/TwinCAT/how-to-control-axis-in-TwinCAT/ReadMe.md",
             date: "March 9, 2024",
             label: "TwinCAT"
