@@ -33,18 +33,18 @@ function AboutMe() {
         <Typography variant='h7' className='about-moto'>
           {resumeData.moto}
         </Typography>
-        
-        {/* Print*/}
-        <div className='about-print-container'>
-          <Typography className='about-print'>
-            <PrintView message="Everything can be automated!"/>
-            <PrintView message="Everything can be controlled!"/>
-            <PrintView message="Everything can be programmed!"/>
-          </Typography>
-        </div>
 
         {/* Dashboard*/}
         <Dashboard/>
+        
+        {/* Print*/}
+        <div className='about-print-container'>
+          <Typography>
+            <PrintView message="'If someone did it I can do it better!'"/>
+            <PrintView message="'If is repeatable it can be automated!'"/>
+            <PrintView message="'In programming everything is possible!'"/>
+          </Typography>
+        </div>
       </Grid>
     </Grid>
   );

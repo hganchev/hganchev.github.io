@@ -1,3 +1,4 @@
+npm install gh-pages --save-dev [if not]
 - More porfolio projects
 - Blog posts
 - Open source projects
