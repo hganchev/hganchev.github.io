@@ -9,6 +9,7 @@ import AboutMe from "./pages/AboutMe/AboutMe"
 import Header from "./components/Header";
 import Articles from './pages/Articles/Articles';
 import ArticleView from './pages/Articles/ArticleView';
+import PortfolioDetail from './pages/Projects/PortfolioDetail';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/portfolio" element={<Projects />}/>
                 <Route path="/articles" element={<Articles />}/>
                 <Route path={`/articleview/:id`} element={<ArticleView />}/>
+                <Route path="/portfolio/:id" element={<PortfolioDetail />}/>
               </Routes>  
             </div>
           </Router>

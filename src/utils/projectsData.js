@@ -6,18 +6,28 @@ import DefaultImage from '../assets/projects/images/Default.jpg';
 export default {
     projects: [
         {
+            id: '1',
             name: 'Synthesis of control of mobile robot',
             img: DefaultImage,
             url: BachelorThesis,
             date: "2014",
-            label: "Thesis"
+            label: "Thesis",
+            taskDescription: "This project involves the synthesis of control for a mobile robot.",
+            lessonsLearned: "Learned about control systems and mobile robotics.",
+            technologiesUsed: "MATLAB, Simulink",
+            timeSpent: "6 months"
         },
         {
+            id: '2',
             name: 'Control of industrial manipulator',
             img: DefaultImage,
             url: MasterThesis,
             date: "2015",
-            label: "Thesis"
+            label: "Thesis",
+            taskDescription: "This project involves the control of an industrial manipulator.",
+            lessonsLearned: "Learned about industrial automation and control systems.",
+            technologiesUsed: "PLC, SCADA",
+            timeSpent: "8 months"
         }
     ],
 }

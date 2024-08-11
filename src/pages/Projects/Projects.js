@@ -1,4 +1,5 @@
 import React, { useState, Component, useEffect }  from 'react';
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
 import './Projects.css';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
@@ -36,17 +37,17 @@ function Projects() {
       <div class="grid">
       {projects.map((project) => (
         <div class="item">
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
+          <Link to={`/portfolio/${project.id}`}>
             <h5>{project.name}</h5>
-          </a>
+          </Link>
           <p> {project.date}</p>
           <div className='div-label'>
               <LocalOfferIcon className='label-icon'/>
               <label>{project.label}</label>   
           </div>
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
+          <Link to={`/portfolio/${project.id}`}>
             <img src={project.img}/>
-          </a>
+          </Link>
         </div>
       ))}
       </div>  
