@@ -19,7 +19,6 @@ function App() {
           <AboutMe/>
         </Grid>
         <Grid item xs>
-          <Router>
             <Header />
             <div className='main-content container_shadow'>
               <Routes>
@@ -30,7 +29,6 @@ function App() {
                 <Route path="/portfolio/:id" element={<PortfolioDetail />}/>
               </Routes>  
             </div>
-          </Router>
         </Grid>
       </Grid>
     </Container>
