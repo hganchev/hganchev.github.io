@@ -63,14 +63,14 @@ function AboutMe() {
           />
           
           <AvatarStyled src={resumeData.picture} 
-          alt={resumeData.name}
-          sx={{
-            width: 200, // Adjust the avatar width
-            height: 200, // Adjust the avatar height
-            img: {
-              objectFit: "contain", // Control how the image fits inside the Avatar
-            },
-          }}/>
+            alt={resumeData.name}
+            sx={{
+              width: 200, // Adjust the avatar width
+              height: 200, // Adjust the avatar height
+              img: {
+                objectFit: "contain", // Control how the image fits inside the Avatar
+              },
+            }}/>
           
           <AboutMoto variant="subtitle1">
             {resumeData.moto}
