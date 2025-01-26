@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import { useParams } from 'react-router-dom'
-import ReactDom from 'react-dom'
-import remarkGfm from 'remark-gfm'
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import {a11yDark, atomDark, base16AteliersulphurpoolLight, cb,
     coldarkCold, coldarkDark, coy, coyWithoutShadows, darcula, 
@@ -20,40 +18,56 @@ import articleData from '../../utils/articlesData';
 function ArticleView() {
     const { id } = useParams();
     const [markdown, setMarkdown] = React.useState('');
+    const [isLoading, setIsLoading] = React.useState(true);
+    const [error, setError] = React.useState(null);
 
     React.useEffect(() => {
-        fetch(articleData.articles[id].url)
-        .then((res) => res.text())
-        .then((text) => setMarkdown(text));
-    }, []);
+        const fetchMarkdown = async () => {
+            try {
+                setIsLoading(true);
+                const res = await fetch(articleData.articles[id].url);
+                if (!res.ok) throw new Error('Failed to fetch article');
+                const text = await res.text();
+                setMarkdown(text);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setIsLoading(false);
+            }
+        };
 
-    return (
-        //ReactDom.render(
+        fetchMarkdown();
+    }, [id]); // Added id to dependency list
+
+    const memoizedMarkdown = React.useMemo(() => (
         <ReactMarkdown
             className='markdown-body'
             children={markdown}
             components={{
-            code({node, inline, className, children, ...props}) {
-                const match = /language-(\w+)/.exec(className || '')
-                return !inline && match ? (
-                <SyntaxHighlighter
-                    {...props}
-                    children={String(children).replace(/\n$/, '')}
-                    style={vscDarkPlus}
-                    language={match[1]}
-                    PreTag="div"
-                />
-                ) : (
-                <code {...props} className={className}>
-                    {children}
-                </code>
-                )
-            }
+                code: React.memo(({node, inline, className, children, ...props}) => {
+                    const match = /language-(\w+)/.exec(className || '')
+                    return !inline && match ? (
+                        <SyntaxHighlighter
+                            {...props}
+                            children={String(children).replace(/\n$/, '')}
+                            style={vscDarkPlus}
+                            language={match[1]}
+                            PreTag="div"
+                        />
+                    ) : (
+                        <code {...props} className={className}>
+                            {children}
+                        </code>
+                    );
+                })
             }}
-            remarkPlugins={[remarkGfm]}
-        />//, document.body
-        //)
-    );
+        />
+    ), [markdown]);
+
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
+
+    return memoizedMarkdown;
 }
   
 export default ArticleView;

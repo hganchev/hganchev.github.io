@@ -34,6 +34,5 @@
 .about .section_qr img{
     align-self: right;
     width: 100% !important;
-    width: 100% !important;
     object-fit: contain !important;
 }
