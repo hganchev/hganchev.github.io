@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.10d99b7c.css",
-    "main.js": "/static/js/main.cd14bfd1.js",
-    "static/js/787.3b722d45.chunk.js": "/static/js/787.3b722d45.chunk.js",
+    "main.css": "/static/css/main.e6388027.css",
+    "main.js": "/static/js/main.dd1aac0c.js",
+    "static/js/787.f5724e65.chunk.js": "/static/js/787.f5724e65.chunk.js",
     "static/media/Axis-Control.png": "/static/media/Axis-Control.863f5d3a1c40d4da03d8.png",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
     "static/media/MThesis_EN.pdf": "/static/media/MThesis_EN.bebd032d610d12eb8cd2.pdf",
@@ -21,12 +21,12 @@
     "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
-    "main.10d99b7c.css.map": "/static/css/main.10d99b7c.css.map",
-    "main.cd14bfd1.js.map": "/static/js/main.cd14bfd1.js.map",
-    "787.3b722d45.chunk.js.map": "/static/js/787.3b722d45.chunk.js.map"
+    "main.e6388027.css.map": "/static/css/main.e6388027.css.map",
+    "main.dd1aac0c.js.map": "/static/js/main.dd1aac0c.js.map",
+    "787.f5724e65.chunk.js.map": "/static/js/787.f5724e65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10d99b7c.css",
-    "static/js/main.cd14bfd1.js"
+    "static/css/main.e6388027.css",
+    "static/js/main.dd1aac0c.js"
   ]
 }
