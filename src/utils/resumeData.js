@@ -43,7 +43,7 @@ export default {
     phone: '',
     address: 'Sofia, Bulgaria',
     moto: ` I want to contribute with my knowledge to the world of automation, robotics and control.`,
-    picture: <img src={HIGImage} alt="Hristo Ganchev" className='about-picture'/>,
+    picture: HIGImage,
     UrlQRCode: <img src={higQRCode}/>,
     socials: {
         discord: {
