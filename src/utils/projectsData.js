@@ -7,8 +7,8 @@ export default {
     projects: [
         {
             id: '1',
-            name: 'Synthesis of control of mobile robot',
-            img: DefaultImage,
+            title: 'Synthesis of control of mobile robot',
+            image: DefaultImage,
             url: BachelorThesis,
             date: "2014",
             label: "Thesis",
@@ -19,8 +19,8 @@ export default {
         },
         {
             id: '2',
-            name: 'Control of industrial manipulator',
-            img: DefaultImage,
+            title: 'Control of industrial manipulator',
+            image: DefaultImage,
             url: MasterThesis,
             date: "2015",
             label: "Thesis",

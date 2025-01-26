@@ -1,16 +1,55 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import styled from "styled-components";
-import './Projects.css';
+import {
+  Box,
+  Container,
+  Grid,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Chip,
+  CircularProgress,
+  Alert
+} from '@mui/material';
+import { styled } from '@mui/material/styles';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import projectData from '../../utils/projectsData';
-// import ErrorBoundary from '../../components/ErrorBoundary';
 
-function Projects() {
+// Styled components using MUI
+const StyledCard = styled(Card)(({ theme }) => ({
+  height: '100%',
+  display: 'flex',
+  flexDirection: 'column',
+  transition: 'transform 0.3s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.03)',
+  },
+}));
+
+const StyledChip = styled(Chip)(({ theme }) => ({
+  margin: '4px',
+  cursor: 'pointer',
+}));
+
+const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [label, setLabel] = useState('All');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [activeFilter, setActiveFilter] = useState('All');
+  const [filteredProjects, setFilteredProjects] = useState([]);
+
+  // Get unique labels
+  const labels = ['All', ...new Set(projectData.projects.map(project => project.label))];
+
+  // Filter function
+  useEffect(() => {
+    const filtered = activeFilter === 'All'
+      ? projectData.projects
+      : projectData.projects.filter(project => project.label === activeFilter);
+    setFilteredProjects(filtered);
+  }, [activeFilter]);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -27,54 +66,86 @@ function Projects() {
     fetchProjects();
   }, []);
 
-  const filteredProjects = useMemo(() => {
-    return label === 'All'
-      ? projects
-      : projects.filter(project => project.label === label);
-  }, [projects, label]);
+  if (isLoading) {
+    return (
+      <Box display="flex" justifyContent="center" alignItems="center" minHeight="80vh">
+        <CircularProgress />
+      </Box>
+    );
+  }
 
-  const ProjectCard = React.memo(({ project }) => (
-    <div className="item">
-      <div>
-        <h5>
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
-            {project.name}
-          </a>
-        </h5>
-      </div>
-      <p> {project.date}</p>
-      <div className="div-label">
-        <LocalOfferIcon className="label-icon"/>
-        <label>{project.label}</label>
-      </div>
-      <img src={project.img}/>
-    </div>
-  ));
-
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (error) {
+    return (
+      <Box m={2}>
+        <Alert severity="error">{error}</Alert>
+      </Box>
+    );
+  }
 
   return (
-    // <ErrorBoundary>
-      <div className='projects'>
-        <div className='section_title al_center'>
-          <span></span>
-          <h1 className='section_title_text s_40'>Projects</h1>
-        </div>
-        <div className="dropdown">
-          <select className='select' onChange={(e) => setLabel(e.target.value)}>
-            <option value='All'>All</option>
-            <option value='Thesis'>Thesis</option>
-            <option value='Work'>Work</option>
-          </select>
-        </div>
-        <div className="grid">
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+    <Container maxWidth="lg">
+      <Box py={4}>
+        <Typography variant="h4" gutterBottom>
+          Projects
+        </Typography>
+        <Box mb={3} display="flex" flexWrap="wrap" gap={1}>
+          {labels.map((label) => (
+            <StyledChip
+              key={label}
+              label={label}
+              icon={<LocalOfferIcon />}
+              onClick={() => setActiveFilter(label)}
+              color={activeFilter === label ? 'primary' : 'default'}
+              sx={{
+                '&:hover': {
+                  backgroundColor: activeFilter === label ? 'primary.light' : 'action.hover',
+                },
+              }}
+            />
           ))}
-        </div>
-      </div>
-    // </ErrorBoundary>
+        </Box>
+        <Grid container spacing={3}>
+          {filteredProjects.map((project) => (
+            <Grid item xs={12} sm={6} md={4} key={project.id}>
+              <StyledCard>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={project.image}
+                  alt={project.title}
+                />
+                <CardContent>
+                  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
+                    <Typography 
+                      component="a" 
+                      href={project.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      sx={{ 
+                        textDecoration: 'none', 
+                        color: 'primary.main',
+                        '&:hover': {
+                          textDecoration: 'underline'
+                        }
+                      }}
+                    >
+                      {project.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {project.date}
+                    </Typography>
+                  </Box>
+                  <StyledChip label= {project.label}
+                              icon={<LocalOfferIcon />}
+                              color={label === 'All' ? 'primary' : 'default'}>
+                  </StyledChip>
+                </CardContent>
+              </StyledCard>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    </Container>
   );
 }
 
