@@ -25,7 +25,7 @@ const StyledTimeline = styled(Timeline)(({ theme }) => ({
     }
   },
   padding: 0, // Remove default padding
-  marginLeft: 0 // Remove default margin
+  marginLeft: 0 // Remove default margin 
 }));
 
 const TimelineSection = ({ title, icon, items }) => (
