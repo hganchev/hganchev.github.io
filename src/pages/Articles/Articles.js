@@ -165,7 +165,7 @@ const Articles = () => {
                   <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
                     <Typography 
                       component={Link}
-                      to={`/article/${article.id}`}
+                      to={`/articleview/${article.id}`}
                       sx={{ 
                         textDecoration: 'none', 
                         color: 'primary.main',
