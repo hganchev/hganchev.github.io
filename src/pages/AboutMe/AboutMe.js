@@ -1,11 +1,9 @@
 import React from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Avatar, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Dashboard from '../Dashboard/Dashboard';
 // import ErrorBoundary from '../../components/ErrorBoundary';
-import "./AboutMe.css";
 import resumeData from '../../utils/resumeData';
-import { WidthFull } from '@mui/icons-material';
 
 
 
@@ -28,13 +26,11 @@ const QRSection = styled(Grid)(({ theme }) => ({
   }
 }));
 
-const AboutPicture = styled('div')(({ theme }) => ({
+const AvatarStyled = styled(Avatar)(({ theme }) => ({
   margin: theme.spacing(3, 0),
-  '& img': {
-    maxWidth: '60%',
-    height: 'auto',
-    borderRadius: theme.shape.borderRadius
-  }
+  width: theme.spacing(30),
+  height: theme.spacing(30),
+  margin: 'auto'
 }));
 
 const AboutMoto = styled(Typography)(({ theme }) => ({
@@ -66,9 +62,15 @@ function AboutMe() {
             title={resumeData.title} 
           />
           
-          <AboutPicture>
-            {resumeData.picture}
-          </AboutPicture>
+          <AvatarStyled src={resumeData.picture} 
+          alt={resumeData.name}
+          sx={{
+            width: 200, // Adjust the avatar width
+            height: 200, // Adjust the avatar height
+            img: {
+              objectFit: "contain", // Control how the image fits inside the Avatar
+            },
+          }}/>
           
           <AboutMoto variant="subtitle1">
             {resumeData.moto}
