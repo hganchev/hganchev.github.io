@@ -7,24 +7,24 @@ export default {
     articles: [
         {
             id: 0,
-            name: 'How to split a STRING in TwinCAT/Codesys',
-            img: HelloWorld,
+            title: 'How to split a STRING in TwinCAT/Codesys',
+            image: HelloWorld,
             url: "https://raw.githubusercontent.com/hganchev/hganchev-portfolio/refs/heads/main/Articles/TwinCAT/how-to-split-a-STRING-in-TwinCAT/ReadMe.md",
             date: "August 27, 2023",
             label: "TwinCAT"
         },
         {
             id: 1,
-            name: 'How to round a REAL in TwinCAT/Codesys',
-            img: RealLreal,
+            title: 'How to round a REAL in TwinCAT/Codesys',
+            image: RealLreal,
             url: "https://raw.githubusercontent.com/hganchev/hganchev-portfolio/refs/heads/main/Articles/TwinCAT/how-to-round-a-REAL-in-TwinCAT/ReadMe.md",
             date: "August 29, 2023",
             label: "TwinCAT"
         },
         {
             id: 2,
-            name: 'How to control axis/motor in TwinCAT/Codesys',
-            img: AxisControl,
+            title: 'How to control axis/motor in TwinCAT/Codesys',
+            image: AxisControl,
             url: "https://raw.githubusercontent.com/hganchev/hganchev-portfolio/refs/heads/main/Articles/TwinCAT/how-to-control-axis-in-TwinCAT/ReadMe.md",
             date: "March 9, 2024",
             label: "TwinCAT"
