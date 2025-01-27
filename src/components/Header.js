@@ -25,7 +25,8 @@ const Header = () => {
 
   const navigationLinks = [
     { path: '/portfolio', label: 'Portfolio' },
-    { path: '/articles', label: 'Articles' }
+    { path: '/articles', label: 'Articles' },
+    { path: '/contact', label: 'Contact Me' }
   ];
 
   const handleMenu = (event) => {

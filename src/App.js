@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Articles from './pages/Articles/Articles';
 import ArticleView from './pages/Articles/ArticleView';
 import PortfolioDetail from './pages/Projects/PortfolioDetail';
+import ContactForm from './pages/Contact/ContactForm';
 
 function App() {
   return (
@@ -22,11 +23,13 @@ function App() {
             <Header />
             <div className='main-content container_shadow'>
               <Routes>
+                <Route path="*" element={<Resume />}/>
                 <Route path="/" element={<Resume />}/>
                 <Route path="/portfolio" element={<Projects />}/>
                 <Route path="/articles" element={<Articles />}/>
                 <Route path={`/articleview/:id`} element={<ArticleView />}/>
                 <Route path="/portfolio/:id" element={<PortfolioDetail />}/>
+                <Route path="/contact" element={<ContactForm />}/>
               </Routes>  
             </div>
         </Grid>
