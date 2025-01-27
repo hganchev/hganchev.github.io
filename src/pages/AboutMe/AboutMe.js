@@ -96,7 +96,7 @@ function AboutMe() {
               width: 200, // Adjust the avatar width
               height: 200, // Adjust the avatar height
               img: {
-                objectFit: "contain", // Control how the image fits inside the Avatar
+                objectFit: "fit", // Control how the image fits inside the Avatar
               },
             }}/>
           
