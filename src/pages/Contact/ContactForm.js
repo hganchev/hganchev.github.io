@@ -90,8 +90,20 @@ const ContactForm = () => {
         cursor: 'pointer'
     };
 
+    const headerStyle = {
+        textAlign: 'center',
+        marginBottom: '20px'
+    };
+
+    const paragraphStyle = {
+        textAlign: 'center'
+    };
+
     return (
         <form id="contact-form" onSubmit={handleSubmit} style={formStyle}>
+            <h2 style={headerStyle}>Contact Me</h2>
+            <p style={paragraphStyle}>Have a question or want to work together? Send me a message!</p>
+
             <input
                 type="text"
                 id="name"
