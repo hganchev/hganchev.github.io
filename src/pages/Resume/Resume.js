@@ -61,7 +61,27 @@ function Resume() {
               <span />
               <Typography variant="h5">About Me</Typography>
             </SectionTitle>
-            <Typography variant="body1">{resumeData.about}</Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                fontStyle: "normal",
+                whiteSpace: "pre-line",
+              }}
+            >
+              {resumeData.about.split("\n").map((line, i) => (
+                <React.Fragment key={i}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
+            </Typography>
+            {resumeData.about.type === "bullet" && (
+              <ul>
+                {resumeData.about.text.split("\n").map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
+              </ul>
+            )}
           </Grid>
 
           {/* Experience Section */}

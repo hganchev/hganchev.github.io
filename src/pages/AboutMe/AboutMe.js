@@ -1,11 +1,39 @@
 import React from 'react';
-import { Avatar, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Dashboard from '../Dashboard/Dashboard';
 // import ErrorBoundary from '../../components/ErrorBoundary';
 import resumeData from '../../utils/resumeData';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton,
+  Box,
+  Menu,
+  MenuItem,
+  useTheme,
+  useMediaQuery,
+  Grid,
+  Avatar
+} from '@mui/material';
 
 
+// Add styled component
+const StyledIconButton = styled(IconButton)(({ theme }) => ({
+  padding: theme.spacing(1),
+  transition: 'transform 0.2s ease-in-out',
+  '&:hover': {
+    transform: 'scale(1.1)',
+  },
+  [theme.breakpoints.down('sm')]: {
+    padding: theme.spacing(0.5),
+  },
+  '& img': {
+    width: '24px',
+    height: '24px',
+  },
+}));
 
 // Styled components
 const AboutContainer = styled(Grid)(({ theme }) => ({
@@ -75,7 +103,26 @@ function AboutMe() {
           <AboutMoto variant="subtitle1">
             {resumeData.moto}
           </AboutMoto>
-
+          <Box sx={{ display: 'flex', gap: 2, ml: 2, justifyContent: 'center' }}>
+            {Object.entries(resumeData.socials).map(([key, { link, icon }]) => (
+              <StyledIconButton
+                key={key}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${key}`}
+                size="small"
+                color="inherit"
+                sx={{
+                  '& img': {
+                    scale: 0.1
+                  }
+                }}
+              >
+                {icon}
+              </StyledIconButton>
+            ))}
+          </Box>
           <Dashboard />
         </Grid>
       </AboutContainer>

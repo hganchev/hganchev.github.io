@@ -17,22 +17,6 @@ import resumeData from '../utils/resumeData';
 import { styled } from '@mui/material/styles';
 import { ForkLeft, HomeRounded } from '@mui/icons-material';
 
-// Add styled component
-const StyledIconButton = styled(IconButton)(({ theme }) => ({
-  padding: theme.spacing(1),
-  transition: 'transform 0.2s ease-in-out',
-  '&:hover': {
-    transform: 'scale(1.1)',
-  },
-  [theme.breakpoints.down('sm')]: {
-    padding: theme.spacing(0.5),
-  },
-  '& img': {
-    width: '24px',
-    height: '24px',
-  },
-}));
-
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const location = useLocation();
@@ -106,26 +90,6 @@ const Header = () => {
             ))}
           </Box>
         )}
-        <Box sx={{ display: 'flex', gap: 2, ml: 2 }}>
-          {Object.entries(resumeData.socials).map(([key, { link, icon }]) => (
-            <StyledIconButton
-              key={key}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`Visit ${key}`}
-              size="small"
-              color="inherit"
-              sx={{
-                '& img': {
-                  scale: 0.1
-                }
-              }}
-            >
-              {icon}
-            </StyledIconButton>
-          ))}
-        </Box>
       </Toolbar>
     </AppBar>
   );
