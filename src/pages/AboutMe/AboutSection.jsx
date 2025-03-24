@@ -41,7 +41,7 @@ const AboutSection = () => {
       <Box 
         ref={sectionRef}
         sx={{
-          pt: 4,
+          pt: { xs: 12, sm: 14 }, // Increased top padding to account for navbar
           pb: 6
         }}
       >
@@ -52,10 +52,17 @@ const AboutSection = () => {
             mb: 4,
             borderRadius: 3,
             background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
-            overflow: 'visible'
+            overflow: 'visible',
+            mt: 10 // Added margin top to make space for avatar
           }}
         >
-          <CardContent sx={{ position: 'relative', textAlign: 'center', pt: 8, pb: 4 }}>
+          <CardContent sx={{ 
+            position: 'relative', 
+            textAlign: 'center', 
+            pt: 10, // Increased top padding
+            pb: 4,
+            px: { xs: 2, sm: 4 } // Added responsive horizontal padding
+          }}>
             {/* Avatar */}
             <Avatar 
               src={resumeData.picture} 
@@ -69,7 +76,8 @@ const AboutSection = () => {
                 top: -80,
                 left: '50%',
                 transform: 'translateX(-50%)',
-                zIndex: 1
+                zIndex: 1,
+                bgcolor: 'background.paper' // Added background color for better appearance
               }}
             />
             
