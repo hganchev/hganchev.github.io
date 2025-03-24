@@ -166,28 +166,6 @@ const ResumeSection = () => {
         </Box>
 
         <Grid container spacing={4}>
-          {/* About Section */}
-          <Grid item xs={12} ref={sectionRefs.about}>
-            <Fade in={visibleSections.about} timeout={800}>
-              <StyledPaper elevation={3}>
-                <Typography variant="h5" fontWeight="bold" gutterBottom>
-                  About Me
-                </Typography>
-                <Divider sx={{ mb: 2 }} />
-                <Typography
-                  variant="body1"
-                  sx={{
-                    fontStyle: "normal",
-                    whiteSpace: "pre-line",
-                    lineHeight: 1.8
-                  }}
-                >
-                  {resumeData.about}
-                </Typography>
-              </StyledPaper>
-            </Fade>
-          </Grid>
-
           {/* Experience Section */}
           <Grid item xs={12} md={6} ref={sectionRefs.experience}>
             <StyledPaper elevation={3}>

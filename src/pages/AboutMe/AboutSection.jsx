@@ -11,8 +11,10 @@ import {
   useMediaQuery,
   useTheme,
   Card,
+  Fade,
   CardContent
 } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import resumeData from '../../utils/resumeData';
 import GitHubStats from '../../components/GitHubStats';
 
@@ -20,6 +22,16 @@ const AboutSection = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const sectionRef = useRef(null);
+
+  const StyledPaper = styled(Paper)(({ theme }) => ({
+    padding: theme.spacing(3),
+    height: '100%',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    '&:hover': {
+      transform: 'translateY(-5px)',
+      boxShadow: theme.shadows[10]
+    }
+  }));
 
   // Add animation effect when component mounts
   useEffect(() => {
@@ -215,23 +227,24 @@ const AboutSection = () => {
           {/* Right Column */}
           <Grid item xs={12} md={8}>
             {/* About Me */}
-            <Card sx={{ mb: 4, borderRadius: 3 }}>
-              <CardContent>
+            <Grid item xs={12} >
+              <StyledPaper elevation={3}>
                 <Typography variant="h5" fontWeight="bold" gutterBottom>
                   About Me
                 </Typography>
-                <Typography 
-                  variant="body1" 
-                  paragraph 
-                  sx={{ 
-                    lineHeight: 1.8,
-                    color: 'text.secondary'
+                <Divider sx={{ mb: 2 }} />
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontStyle: "normal",
+                    whiteSpace: "pre-line",
+                    lineHeight: 1.8
                   }}
                 >
                   {resumeData.about}
                 </Typography>
-              </CardContent>
-            </Card>
+              </StyledPaper>
+            </Grid>
 
             {/* Skills Section */}
             <Card sx={{ mb: 4, borderRadius: 3 }}>
