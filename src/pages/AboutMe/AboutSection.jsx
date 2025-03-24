@@ -111,37 +111,7 @@ const AboutSection = () => {
             mb: 2
           }}
         >
-          {Object.entries(resumeData.socials).map(([key, { link, icon }]) => (
-            <IconButton
-              key={key}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              size="small"
-              aria-label={`Visit ${key}`}
-              sx={{
-                width: 36,
-                height: 36,
-                transition: 'all 0.2s ease-in-out',
-                '&:hover': {
-                  transform: 'translateY(-3px)',
-                  color: 'primary.main',
-                  bgcolor: 'rgba(25, 118, 210, 0.04)'
-                },
-                '& img': {
-                  width: '20px',
-                  height: '20px',
-                  objectFit: 'contain',
-                  transition: 'transform 0.2s ease-in-out',
-                },
-                '&:hover img': {
-                  transform: 'scale(1.1)'
-                }
-              }}
-            >
-              {icon}
-            </IconButton>
-          ))}
+          
         </Box>
       </Box>
 
