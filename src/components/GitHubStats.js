@@ -1,47 +1,52 @@
 import React from 'react';
-import { Box, Skeleton, Fade } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
+import resumeData from '../utils/resumeData';
 
-export const GitHubStats = ({ loading = false, error = null }) => {
-  if (error) return <Box>Error loading GitHub stats</Box>;
-  
-  if (loading) return <Skeleton variant="rectangular" height={200} />;
+const GitHubStats = () => {
+  const username = resumeData.github?.username || 'hganchev';
 
   return (
-    <Fade in timeout={1000}>
-      <Box sx={{ 
-        display: 'flex', 
-        flexDirection: 'column', 
-        gap: 2 
-      }}>
-        <a href="https://github.com/hganchev">
-          <Box
-            component="img"
-            alt="GitHub Stats"
-            width="130%"
-            src="https://github-readme-stats.vercel.app/api?username=hganchev&show_icons=true&hide_title=true&count_private=true&theme=vue"
-            sx={{
-              transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(2)'
-              }
-            }}
-          />
-        </a>
-        <a href="https://github.com/hganchev">
-          <Box
-            component="img"
-            alt="Top Languages"
-            width="130%"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=hganchev&layout=compact&theme=vue&hide=jupyter%20notebook"
-            sx={{
-              transition: 'transform 0.3s ease-in-out',
-              '&:hover': {
-                transform: 'scale(2)'
-              }
-            }}
-          />
-        </a>
+    <Box sx={{ textAlign: 'center' }}>
+      {/* GitHub Stats Card */}
+      <Box sx={{ mb: 2 }}>
+        <img
+          src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&count_private=true&hide_border=true&theme=react`}
+          alt="GitHub Stats"
+          style={{ width: '100%', maxWidth: 500, height: 'auto' }}
+        />
       </Box>
-    </Fade>
+
+      {/* Top Languages Card */}
+      <Box sx={{ mb: 2 }}>
+        <img
+          src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&hide_border=true&theme=react`}
+          alt="Top Languages"
+          style={{ width: '100%', maxWidth: 500, height: 'auto' }}
+        />
+      </Box>
+
+      {/* Contribution Graph */}
+      <Box sx={{ mb: 2 }}>
+        <img
+          src={`https://github-readme-activity-graph.vercel.app/graph?username=${username}&theme=react-dark&hide_border=true`}
+          alt="Contribution Graph"
+          style={{ width: '100%', maxWidth: '100%', height: 'auto' }}
+        />
+      </Box>
+
+      <Typography variant="caption" color="text.secondary">
+        Powered by{' '}
+        <Link
+          href="https://github.com/anuraghazra/github-readme-stats"
+          target="_blank"
+          rel="noopener noreferrer"
+          color="primary"
+        >
+          GitHub Stats
+        </Link>
+      </Typography>
+    </Box>
   );
 };
+
+export default GitHubStats;
