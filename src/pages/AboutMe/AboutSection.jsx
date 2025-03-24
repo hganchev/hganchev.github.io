@@ -9,7 +9,8 @@ import {
   IconButton,
   Divider,
   useMediaQuery,
-  useTheme
+  useTheme,
+  Stack
 } from '@mui/material';
 import resumeData from '../../utils/resumeData';
 import GitHubStats from '../../components/GitHubStats';
@@ -89,32 +90,50 @@ const AboutSection = () => {
             
             <Divider flexItem sx={{ my: 2 }} />
             
-            <Box sx={{ 
-              display: 'flex', 
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-              gap: 2,
-              mt: 2
-            }}>
+            <Stack 
+              direction="row" 
+              spacing={1} 
+              sx={{ 
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: 1,
+                '& > *': {
+                  m: 0.5
+                }
+              }}
+            >
               {Object.entries(resumeData.socials).map(([key, { link, icon }]) => (
                 <IconButton
                   key={key}
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  size="small"
                   aria-label={`Visit ${key}`}
                   sx={{
-                    transition: 'transform 0.2s ease-in-out, color 0.2s ease',
+                    width: 36,
+                    height: 36,
+                    transition: 'all 0.2s ease-in-out',
                     '&:hover': {
-                      transform: 'scale(1.2)',
-                      color: 'primary.main'
+                      transform: 'translateY(-3px)',
+                      color: 'primary.main',
+                      bgcolor: 'rgba(25, 118, 210, 0.04)'
+                    },
+                    '& img': {
+                      width: '20px',
+                      height: '20px',
+                      objectFit: 'contain',
+                      transition: 'transform 0.2s ease-in-out',
+                    },
+                    '&:hover img': {
+                      transform: 'scale(1.1)'
                     }
                   }}
                 >
                   {icon}
                 </IconButton>
               ))}
-            </Box>
+            </Stack>
             
             {resumeData.UrlQRCode && (
               <Box sx={{ mt: 3, textAlign: 'center' }}>
