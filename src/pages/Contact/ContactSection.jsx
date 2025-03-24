@@ -158,46 +158,6 @@ const ContactSection = () => {
                 </Grid>
               ))}
             </Grid>
-
-            {/* Social Links */}
-            <Box mt={4}>
-              <Typography variant="h6" fontWeight="bold" gutterBottom>
-                Follow Me
-              </Typography>
-              <Box 
-                sx={{ 
-                  display: 'flex', 
-                  gap: 2,
-                  flexWrap: 'wrap'
-                }}
-              >
-                {Object.entries(resumeData.socials).map(([key, { link, icon }], index) => (
-                  <Fade 
-                    key={key} 
-                    in={true} 
-                    timeout={800} 
-                    style={{ transitionDelay: `${(index + 3) * 200}ms` }}
-                  >
-                    <IconButton
-                      href={link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      sx={{
-                        bgcolor: 'background.paper',
-                        boxShadow: theme.shadows[2],
-                        transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-                        '&:hover': {
-                          transform: 'scale(1.1)',
-                          boxShadow: theme.shadows[4]
-                        }
-                      }}
-                    >
-                      {icon}
-                    </IconButton>
-                  </Fade>
-                ))}
-              </Box>
-            </Box>
           </Grid>
 
           {/* Contact Form */}
