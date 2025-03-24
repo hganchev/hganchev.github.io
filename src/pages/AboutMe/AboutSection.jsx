@@ -56,7 +56,10 @@ const AboutSection = () => {
           flexDirection: 'column',
           alignItems: 'center',
           mb: 6,
-          pt: 4
+          pt: 4,
+          width: '100%',
+          maxWidth: { xs: '100%', sm: '600px', md: '800px' },
+          mx: 'auto'
         }}
       >
         <Avatar 
@@ -94,6 +97,52 @@ const AboutSection = () => {
         >
           {resumeData.moto}
         </Typography>
+
+        {/* Social Icons in Top Section */}
+        <Box 
+          sx={{ 
+            width: '100%',
+            maxWidth: { xs: '300px', sm: '400px' },
+            mx: 'auto',
+            display: 'flex',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            gap: 1,
+            mb: 2
+          }}
+        >
+          {Object.entries(resumeData.socials).map(([key, { link, icon }]) => (
+            <IconButton
+              key={key}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="small"
+              aria-label={`Visit ${key}`}
+              sx={{
+                width: 36,
+                height: 36,
+                transition: 'all 0.2s ease-in-out',
+                '&:hover': {
+                  transform: 'translateY(-3px)',
+                  color: 'primary.main',
+                  bgcolor: 'rgba(25, 118, 210, 0.04)'
+                },
+                '& img': {
+                  width: '20px',
+                  height: '20px',
+                  objectFit: 'contain',
+                  transition: 'transform 0.2s ease-in-out',
+                },
+                '&:hover img': {
+                  transform: 'scale(1.1)'
+                }
+              }}
+            >
+              {icon}
+            </IconButton>
+          ))}
+        </Box>
       </Box>
 
       <Grid container spacing={4} alignItems="flex-start">
@@ -109,7 +158,8 @@ const AboutSection = () => {
               alignItems: 'center',
               background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
               position: 'sticky',
-              top: 100
+              top: 100,
+              width: '100%'
             }}
           >
             {/* Social Icons */}
@@ -200,30 +250,7 @@ const AboutSection = () => {
         
         {/* About Me Details */}
         <Grid item xs={12} md={8} ref={detailsRef}>
-          <Box>
-            <Typography 
-              variant="h3" 
-              fontWeight="bold" 
-              gutterBottom
-              sx={{
-                background: `linear-gradient(45deg, ${theme.palette.text.primary} 30%, ${theme.palette.primary.main} 90%)`,
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent'
-              }}
-            >
-              About Me
-            </Typography>
-            <Typography 
-              variant="body1" 
-              paragraph 
-              sx={{ 
-                lineHeight: 1.8,
-                color: 'text.secondary'
-              }}
-            >
-              {resumeData.about}
-            </Typography>
-            
+          <Box>        
             <Grid container spacing={3} sx={{ mt: 1 }}>
               {resumeData.personalDetails && Object.entries(resumeData.personalDetails).map(([key, value]) => (
                 <Grid item xs={12} sm={6} key={key}>
@@ -250,9 +277,6 @@ const AboutSection = () => {
             </Grid>
             
             <Box sx={{ mt: 4 }}>
-              <Typography variant="h5" fontWeight="bold" gutterBottom>
-                Skills & Expertise
-              </Typography>
               <Grid container spacing={1.5}>
                 {resumeData.skills && resumeData.skills.map((skill, index) => (
                   <Grid item key={index} xs={6} sm={4} md={3}>
