@@ -12,13 +12,15 @@ import {
   Snackbar,
   Alert,
   useTheme,
-  Fade
+  Fade,
+  CircularProgress
 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import resumeData from '../../utils/resumeData';
+import { sendEmail } from '../../services/emailService';
 
 const ContactSection = () => {
   const theme = useTheme();
@@ -33,6 +35,7 @@ const ContactSection = () => {
     message: '',
     severity: 'success'
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -43,26 +46,33 @@ const ContactSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    
     try {
-      // Here you would typically send the form data to your backend
-      // For now, we'll just show a success message
+      const result = await sendEmail(formData);
+      
       setSnackbar({
         open: true,
-        message: 'Message sent successfully!',
-        severity: 'success'
+        message: result.message,
+        severity: result.success ? 'success' : 'error'
       });
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
+
+      if (result.success) {
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      }
     } catch (error) {
       setSnackbar({
         open: true,
         message: 'Failed to send message. Please try again.',
         severity: 'error'
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -182,6 +192,7 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
                       variant="outlined"
                       sx={{
                         '& .MuiOutlinedInput-root': {
@@ -199,6 +210,7 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
                       variant="outlined"
                       sx={{
                         '& .MuiOutlinedInput-root': {
@@ -215,6 +227,7 @@ const ContactSection = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
                       variant="outlined"
                       sx={{
                         '& .MuiOutlinedInput-root': {
@@ -231,6 +244,7 @@ const ContactSection = () => {
                       value={formData.message}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
                       multiline
                       rows={6}
                       variant="outlined"
@@ -246,7 +260,8 @@ const ContactSection = () => {
                       type="submit"
                       variant="contained"
                       size="large"
-                      endIcon={<SendIcon />}
+                      disabled={isSubmitting}
+                      endIcon={isSubmitting ? <CircularProgress size={20} /> : <SendIcon />}
                       sx={{
                         borderRadius: 2,
                         py: 1.5,
@@ -259,7 +274,7 @@ const ContactSection = () => {
                         }
                       }}
                     >
-                      Send Message
+                      {isSubmitting ? 'Sending...' : 'Send Message'}
                     </Button>
                   </Grid>
                 </Grid>
