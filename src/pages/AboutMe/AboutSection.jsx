@@ -51,7 +51,9 @@ const AboutSection = () => {
           sx={{
             mb: 4,
             borderRadius: 3,
-            background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
+            background: theme.palette.mode === 'dark' 
+              ? 'linear-gradient(145deg, #1E1E1E 0%, #121212 100%)'
+              : 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
             overflow: 'visible',
             mt: 10 // Added margin top to make space for avatar
           }}
@@ -70,8 +72,8 @@ const AboutSection = () => {
               sx={{
                 width: 160,
                 height: 160,
-                border: '4px solid white',
-                boxShadow: 3,
+                border: `4px solid ${theme.palette.background.paper}`,
+                boxShadow: theme.palette.mode === 'dark' ? '0 8px 16px rgba(0,0,0,0.4)' : 3,
                 position: 'absolute',
                 top: -80,
                 left: '50%',
@@ -214,7 +216,9 @@ const AboutSection = () => {
                       p: 3,
                       maxWidth: 'fit-content',
                       borderRadius: 2,
-                      background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
+                      background: theme.palette.mode === 'dark'
+                        ? 'linear-gradient(145deg, #1E1E1E 0%, #121212 100%)'
+                        : 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
                       textAlign: 'center'
                     }}
                   >
@@ -226,11 +230,15 @@ const AboutSection = () => {
                         sx={{ 
                           width: '180px',
                           mx: 'auto',
+                          p: 2,
+                          bgcolor: 'background.paper',
+                          borderRadius: 1,
                           '& img': {
                             width: '100%',
                             height: 'auto',
                             display: 'block',
-                            borderRadius: 1
+                            borderRadius: 1,
+                            filter: theme.palette.mode === 'dark' ? 'invert(1)' : 'none'
                           }
                         }}
                       >
