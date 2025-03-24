@@ -48,48 +48,71 @@ const AboutSection = () => {
 
   return (
     <Container maxWidth="lg">
-      <Grid container spacing={4} alignItems="center">
+      {/* Avatar Section at Top */}
+      <Box 
+        ref={profileRef}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          mb: 6,
+          pt: 4
+        }}
+      >
+        <Avatar 
+          src={resumeData.picture} 
+          alt={resumeData.name}
+          sx={{
+            width: 180,
+            height: 180,
+            border: '4px solid white',
+            boxShadow: 3,
+            mb: 2.5
+          }}
+        />
+        <Typography variant="h3" fontWeight="bold" align="center" gutterBottom>
+          {resumeData.name}
+        </Typography>
+        <Typography 
+          variant="h5" 
+          color="primary" 
+          align="center" 
+          gutterBottom
+          sx={{ fontWeight: 500 }}
+        >
+          {resumeData.title}
+        </Typography>
+        <Typography 
+          variant="body1" 
+          color="text.secondary" 
+          align="center" 
+          sx={{ 
+            fontStyle: 'italic',
+            maxWidth: '600px',
+            mb: 2.5
+          }}
+        >
+          {resumeData.moto}
+        </Typography>
+      </Box>
+
+      <Grid container spacing={4} alignItems="flex-start">
         {/* Profile Section */}
-        <Grid item xs={12} md={5} ref={profileRef}>
+        <Grid item xs={12} md={4}>
           <Paper 
-            elevation={6}
+            elevation={3}
             sx={{ 
-              p: 4, 
-              borderRadius: 4,
+              p: 3, 
+              borderRadius: 2,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              background: 'linear-gradient(to bottom right, #ffffff, #f5f5f5)'
+              background: 'linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%)',
+              position: 'sticky',
+              top: 100
             }}
           >
-            <Avatar 
-              src={resumeData.picture} 
-              alt={resumeData.name}
-              sx={{
-                width: 200,
-                height: 200,
-                border: '5px solid white',
-                boxShadow: 3,
-                mb: 3
-              }}
-            />
-            <Typography variant="h4" fontWeight="bold" align="center" gutterBottom>
-              {resumeData.name}
-            </Typography>
-            <Typography variant="h6" color="primary" align="center" gutterBottom>
-              {resumeData.title}
-            </Typography>
-            <Typography 
-              variant="body1" 
-              color="textSecondary" 
-              align="center" 
-              sx={{ fontStyle: 'italic', my: 2 }}
-            >
-              {resumeData.moto}
-            </Typography>
-            
-            <Divider flexItem sx={{ my: 2 }} />
-            
+            {/* Social Icons */}
             <Stack 
               direction="row" 
               spacing={1} 
@@ -97,6 +120,7 @@ const AboutSection = () => {
                 flexWrap: 'wrap',
                 justifyContent: 'center',
                 gap: 1,
+                mb: 3,
                 '& > *': {
                   m: 0.5
                 }
@@ -134,58 +158,122 @@ const AboutSection = () => {
                 </IconButton>
               ))}
             </Stack>
+
+            <Divider flexItem sx={{ mb: 3 }} />
             
+            {/* QR Code Section */}
             {resumeData.UrlQRCode && (
-              <Box sx={{ mt: 3, textAlign: 'center' }}>
-                <Typography variant="subtitle2" color="textSecondary" gutterBottom>
-                  Scan to visit my portfolio
-                </Typography>
+              <Box 
+                sx={{ 
+                  width: '100%',
+                  maxWidth: '180px',
+                  mx: 'auto',
+                  p: 2,
+                  bgcolor: 'background.paper',
+                  borderRadius: 2,
+                  boxShadow: 1,
+                  '& img': {
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                    borderRadius: 1
+                  }
+                }}
+              >
                 {resumeData.UrlQRCode}
+                <Typography 
+                  variant="caption" 
+                  color="text.secondary"
+                  align="center"
+                  sx={{ 
+                    display: 'block',
+                    mt: 1,
+                    fontSize: '0.75rem'
+                  }}
+                >
+                  Scan to visit portfolio
+                </Typography>
               </Box>
             )}
           </Paper>
         </Grid>
         
         {/* About Me Details */}
-        <Grid item xs={12} md={7} ref={detailsRef}>
+        <Grid item xs={12} md={8} ref={detailsRef}>
           <Box>
-            <Typography variant="h3" fontWeight="bold" gutterBottom>
-              About <span style={{ color: theme.palette.primary.main }}>Me</span>
+            <Typography 
+              variant="h3" 
+              fontWeight="bold" 
+              gutterBottom
+              sx={{
+                background: `linear-gradient(45deg, ${theme.palette.text.primary} 30%, ${theme.palette.primary.main} 90%)`,
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+            >
+              About Me
             </Typography>
-            <Typography variant="body1" paragraph>
-              {resumeData.about || "I'm a software developer passionate about creating meaningful applications. I enjoy solving complex problems and turning ideas into reality through elegant coding solutions."}
+            <Typography 
+              variant="body1" 
+              paragraph 
+              sx={{ 
+                lineHeight: 1.8,
+                color: 'text.secondary'
+              }}
+            >
+              {resumeData.about}
             </Typography>
             
-            <Grid container spacing={2} sx={{ mt: 2 }}>
+            <Grid container spacing={3} sx={{ mt: 1 }}>
               {resumeData.personalDetails && Object.entries(resumeData.personalDetails).map(([key, value]) => (
                 <Grid item xs={12} sm={6} key={key}>
-                  <Typography variant="subtitle1">
-                    <strong>{key}:</strong> {value}
-                  </Typography>
+                  <Paper
+                    elevation={1}
+                    sx={{
+                      p: 2,
+                      height: '100%',
+                      transition: 'transform 0.2s ease',
+                      '&:hover': {
+                        transform: 'translateY(-2px)'
+                      }
+                    }}
+                  >
+                    <Typography variant="subtitle2" color="primary" gutterBottom>
+                      {key}
+                    </Typography>
+                    <Typography variant="body2">
+                      {value}
+                    </Typography>
+                  </Paper>
                 </Grid>
               ))}
             </Grid>
             
             <Box sx={{ mt: 4 }}>
               <Typography variant="h5" fontWeight="bold" gutterBottom>
-                My Skills
+                Skills & Expertise
               </Typography>
-              <Grid container spacing={2}>
+              <Grid container spacing={1.5}>
                 {resumeData.skills && resumeData.skills.map((skill, index) => (
-                  <Grid item key={index} xs={6} sm={4} md={4}>
+                  <Grid item key={index} xs={6} sm={4} md={3}>
                     <Paper 
-                      elevation={2} 
+                      elevation={1}
                       sx={{
                         p: 1.5,
                         textAlign: 'center',
-                        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                        transition: 'all 0.3s ease',
+                        cursor: 'default',
                         '&:hover': {
-                          transform: 'translateY(-5px)',
-                          boxShadow: 6
+                          transform: 'translateY(-3px)',
+                          boxShadow: 3,
+                          bgcolor: 'primary.light',
+                          color: 'white'
                         }
                       }}
                     >
-                      <Typography variant="body1">{skill}</Typography>
+                      <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                        {skill}
+                      </Typography>
                     </Paper>
                   </Grid>
                 ))}
@@ -197,7 +285,14 @@ const AboutSection = () => {
               <Typography variant="h5" fontWeight="bold" gutterBottom>
                 GitHub Activity
               </Typography>
-              <Paper elevation={3} sx={{ p: 2, borderRadius: 2 }}>
+              <Paper 
+                elevation={2} 
+                sx={{ 
+                  p: 2.5, 
+                  borderRadius: 2,
+                  bgcolor: 'background.default' 
+                }}
+              >
                 <GitHubStats />
               </Paper>
             </Box>
