@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5a5bc85.css",
-    "main.js": "/static/js/main.ab7a4046.js",
+    "main.css": "/static/css/main.66922925.css",
+    "main.js": "/static/js/main.cf964db7.js",
     "static/js/787.f5724e65.chunk.js": "/static/js/787.f5724e65.chunk.js",
     "static/media/Axis-Control.png": "/static/media/Axis-Control.863f5d3a1c40d4da03d8.png",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
@@ -21,12 +21,12 @@
     "static/media/fiverr-icon-logo.svg": "/static/media/fiverr-icon-logo.fa5fb83fb5737faccbe5078af8970901.svg",
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
-    "main.a5a5bc85.css.map": "/static/css/main.a5a5bc85.css.map",
-    "main.ab7a4046.js.map": "/static/js/main.ab7a4046.js.map",
+    "main.66922925.css.map": "/static/css/main.66922925.css.map",
+    "main.cf964db7.js.map": "/static/js/main.cf964db7.js.map",
     "787.f5724e65.chunk.js.map": "/static/js/787.f5724e65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5a5bc85.css",
-    "static/js/main.ab7a4046.js"
+    "static/css/main.66922925.css",
+    "static/js/main.cf964db7.js"
   ]
 }
