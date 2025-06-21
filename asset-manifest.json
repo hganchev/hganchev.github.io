@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ffbcef29.css",
-    "main.js": "/static/js/main.679343f3.js",
+    "main.js": "/static/js/main.e4c4303b.js",
     "static/js/488.6d9896ce.chunk.js": "/static/js/488.6d9896ce.chunk.js",
     "static/media/Axis-Control.png": "/static/media/Axis-Control.863f5d3a1c40d4da03d8.png",
     "static/media/BThesis_EN.pdf": "/static/media/BThesis_EN.c996a971d12d9eafc751.pdf",
@@ -12,6 +12,7 @@
     "static/media/HelloWorld.png": "/static/media/HelloWorld.5015149e5103fb992f31.png",
     "static/media/matlab-icon-logo.png": "/static/media/matlab-icon-logo.5821b44d86984c741c1b.png",
     "static/media/arduino-icon-logo.png": "/static/media/arduino-icon-logo.49bc05d73687fa6a95c9.png",
+    "static/media/StateMachine.png": "/static/media/StateMachine.f36816598c3d23ba8712.png",
     "static/media/industrial-robot-logo-icon.jpg": "/static/media/industrial-robot-logo-icon.18a8abd54ec7b0071911.jpg",
     "static/media/c-icon-logo.png": "/static/media/c-icon-logo.5a45dfbe7dbab84acddf.png",
     "static/media/python-icon-logo.png": "/static/media/python-icon-logo.3773b61d7de3dd14e7ef.png",
@@ -22,11 +23,11 @@
     "static/media/discord-icon-logo.svg": "/static/media/discord-icon-logo.2392b87adcd199bea607e531691ccb58.svg",
     "index.html": "/index.html",
     "main.ffbcef29.css.map": "/static/css/main.ffbcef29.css.map",
-    "main.679343f3.js.map": "/static/js/main.679343f3.js.map",
+    "main.e4c4303b.js.map": "/static/js/main.e4c4303b.js.map",
     "488.6d9896ce.chunk.js.map": "/static/js/488.6d9896ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffbcef29.css",
-    "static/js/main.679343f3.js"
+    "static/js/main.e4c4303b.js"
   ]
 }
