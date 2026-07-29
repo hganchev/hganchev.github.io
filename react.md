@@ -4,5 +4,5 @@ $ ncu -u
 $ npm install
 
 For deploy:
-$ nmp run deploy 
+$ npm run deploy 
 
